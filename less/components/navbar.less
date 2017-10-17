@@ -1,0 +1,127 @@
+@navbar-breakpoint:    768px;
+
+.header_navbar {
+	margin: 0;
+	padding-left: 0;
+	padding-top: 55px;
+
+	.header_nav {
+		    text-align: justify;
+		    width: 100%;
+		    margin: 0;
+		    padding: 0;
+		    line-height: 1em;
+		> li {
+				display: inline-block;
+			> a {
+				text-transform: uppercase;
+				display: inline-block;
+				padding: 0 0 17px;
+				font-size: 14px;
+				color: @gc2;
+				&:hover {
+				background: none;
+				color: @gc;
+				text-decoration: none;
+				border-bottom: 2px solid @gc;
+				}
+				&:focus {
+				text-decoration: none;
+				}
+			}		
+		}
+		.active {
+			a {
+				color: @gc;
+				border-bottom: 2px solid @gc;
+			}
+		}
+	}
+	.header_nav:after{ 
+				content: "";
+				display: inline-block;
+				width: 100%;
+		}
+}
+.header_icon {
+		padding-top: 35px;
+	display: inline-flex;
+	justify-content: space-between;
+	.dropdown {
+		display: inline-block;
+		padding-top: 5px;
+		> a:hover {
+			color: @gc;
+		}
+		.dropdown-menu {
+			min-width: 50px;
+			background-color: @gc;
+			margin: 0;
+			border-radius: 0;
+			> li {
+			
+					display: block;
+			>	a {
+				padding: 0 4px;
+				margin: 0;
+				color: #fff;
+				font-weight: bold;
+				text-transform: uppercase;
+				text-decoration: underline;
+				> i {
+					display: inline-block;
+					margin-right: 5px;
+				}
+				span {
+					display: inline-block;
+				}
+				.bg-esp {
+					    width: 14px; height: 16px;
+					    background: url('../images/css_sprites2.png') -10px -6px;
+					}
+					.bg-ru {
+					    width: 14px; height: 16px;
+					    background: url('../images/css_sprites2.png') -10px -40px;
+					}
+					.bg-us {
+					    width: 14px; height: 16px;
+					    background: url('../images/css_sprites2.png') -10px -74px;
+					}
+				}
+				> a:hover {
+					color: @gc;
+				}
+			}
+		}
+	}
+}
+.header_icon_block {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 120px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	li {
+		display: inline-block;
+		width: 32px;
+		height: 32px;
+		> a {
+				width: 32px;
+		height: 32px;
+			display: inline-block;
+		text-indent: -10000px;
+		}
+	}
+	.bg-tg {
+    background: url('../images/css_sprites.png') -61px -10px;
+
+	}
+	.bg-v {
+    background: url('../images/css_sprites.png') -10px -10px;
+}
+	.bg-wu {
+    background: url('../images/css_sprites.png') -113px -10px;
+}
+}
