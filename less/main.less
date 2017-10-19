@@ -170,9 +170,38 @@ background-size: cover;
 .popular_main_item_block_img {
 	width: 100%;
 	height: 233px;
+	position: relative;
+	z-index: 1;
 	img {
 		width: 100%;
 		height: 100%;
+	}
+	i {
+		display: inline-block;
+		z-index: 2;
+		position: absolute;
+		
+		top: -5px;
+		left: -2px;
+		font-size: 50px;
+		width: 50px;
+		height: 50px;
+		overflow: hidden;
+	}
+	.icon-xku51hQ7C4 {
+		font-size: 40px;
+		top: 0;
+		left: 0;
+	}
+	&:before {
+		content: "";
+		width: 0;
+		height: 0;
+		border-top: 75px solid #f3f3f3; 
+		border-right: 75px solid transparent;
+		position: absolute;
+		top: 0;
+		left: 0;
 	}
 }
 .popular_main_item_block_type {
@@ -333,6 +362,21 @@ background-size: cover;
 	span {
 		display: block;
 		word-spacing: -0.1em;
+	}
+}
+.footer_social {
+	font-size: 0px;
+	a {
+		display: inline-block;
+		color: #a7a6b3;
+		width: 45px;
+		height: 45px;
+		font-size: 45px;
+		margin-right: 10px;
+	&:hover {
+		text-decoration: none;
+		color: @gc;
+	}
 	}
 }
 .main_footer_links {
