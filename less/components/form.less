@@ -95,8 +95,34 @@
 	flex-direction: row;
 	justify-content: space-between;
 	margin-bottom: 25px;
+
+	
+}
+.form_group_select_block {
+	width: 265px;
+	position: relative;
+	&:after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 5px 10px 0;
+  background: #010025;
+  pointer-events: none;
+  color: #fff;
+}
 	select {
-		width: 265px;
+		width: 100%;
+		-webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  background-image: none;
+  padding-left: 5px;
+	
 	}
 }
 .form_group_input {
@@ -212,9 +238,7 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 label.css-label {
 	background-image:url(../images/mark.png);
 }
-.catalog_search_control_list {
 
-}
 .catalog_search_control_list_block {
 	display: flex;
 	flex-direction: row;
@@ -246,3 +270,94 @@ label.css-label {
 		}
 	}
 }
+.catalog_prices_search_form {
+	margin-bottom: 45px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	input {
+			border: 1px solid #7f7f7f;
+			border-radius: 0px;
+			height: 30px;
+			color: #828282;
+			width: 115px;
+    padding-left: 8px;
+		}
+		select {
+			border: 1px solid #7f7f7f;
+			border-radius: 0px;
+			height: 33px;
+			color: #828282;
+			margin-right: 15px;
+		}
+		.form_group_input_string {
+			width: 50%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	h6 {
+		display: inline-block;
+	}
+		}
+}
+.catalog_prices_tabs_block {
+	.catalog_search_form_tabs;
+	> span {
+		text-transform: none;
+		color: #838396;
+}
+	span.active {
+		color: @gc;
+	}
+}
+		span.catalog_prices_tabs_bookmark {
+			color: #00a0c6;
+			margin-right: 0;
+			position: relative;
+			z-index: 2;
+				.tooltip_tabs {
+					display: none;
+					margin-right: 0;
+					color: #000;
+					background-color: #e6e6e6;
+			position: absolute;
+			z-index: 2;
+			line-height: 1.2em;
+			right: -110px;
+			top: -60px;
+			font-size: 12px;
+			text-transform: none;
+			font-weight: normal;
+			width: 130px;
+			border: 1px solid #d0d0d0;
+			padding: 5px 10px;
+			-moz-box-shadow: -2px 4px 6px #ebebeb;
+			-webkit-box-shadow: -2px 4px 6px #ebebeb;
+			box-shadow: -2px 4px 6px #ebebeb;
+			&:before {
+			position: absolute;
+			content: "";
+			z-index: 3;
+			left: 0;
+			bottom: -19px;
+			width: 0;
+			height: 0;
+			border-top: 19px solid #e6e6e6; 
+			border-right: 23px solid transparent;	
+			}
+			&:after {
+			position: absolute;
+			content: "";
+			z-index: 2;
+			left: -1px;
+			bottom: -20px;
+			width: 0;
+			height: 0;
+			border-top: 20px solid #d0d0d0; 
+			border-right: 25px solid transparent;	
+				}
+			}
+			&:hover > span {
+		display: block;
+	}
+		}

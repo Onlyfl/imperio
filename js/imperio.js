@@ -1,5 +1,10 @@
 	
-		 				
+	$(document).ready(function () {
+	 $('.flexslider').flexslider({
+    animation: "slide",
+    controlNav: "thumbnails"
+  });
+	});	 				
 
 	
 $(document).on('click','.full_form', function() {
