@@ -38,14 +38,17 @@ $(document).on('click','.full_form', function() {
     });
 
 $(document).on('click','.deactive_favorites', function() {
-			 $('.active_favorites').show();
+			$(this).next().show();
+			$(this).parent().css({"display": "inline-block"});
 			 $('.popup_favorites').show();
-			  $('.deactive_favorites').hide();
+			  $(this).hide();
 
     });
 $(document).on('click','.active_favorites', function() {
-			 $('.deactive_favorites').show();
-			  $('.active_favorites').hide();
+			$(this).prev().show();
+			$(this).hide();
+			$(this).parent().css({"display": ""});
+			
 
     });
 	
