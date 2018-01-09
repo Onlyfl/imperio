@@ -15,10 +15,10 @@
 </head>
 <body>
 	<div class="wrapper">
-		<header class="header">
-			<div class="container">
+	<header class="header header_short_mobile">
+				<div class="container">
 					<div class="row">
-						<div class="col-md-2">
+						<div class="col-md-2 col-sm-2 col-xs-2 ">
 							<div class="header_logo">
 								<a href="#">
 									<img src="images/logo.png" alt="logo">
@@ -26,14 +26,23 @@
 								</a>
 							</div>
 						</div>
-						<div class="col-md-6 header_navbar">
-							 <ul class="header_nav">
-								  <li class="active"><a href="#">Главная</a></li>
-								   <li><a href="#">Недвижимость</a></li>
-								  <li><a href="#">Информация</a></li>
-								  <li><a href="#">Заявка</a></li>
-								  <li><a href="#">Контакты</a></li>
-								</ul>
+						<div class="col-md-6 col-md-offset-0 col-sm-3 col-sm-offset-7 col-xs-3 col-xs-offset-7">
+							<div class="header_navbar_block">
+								<div class="header_navbar">
+									<button type="button" class="navbar-toggle">
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						      </button>
+									 <ul class="header_nav">
+										  <li class="active"><a href="#">Главная</a></li>
+										   <li><a href="#">Недвижимость</a></li>
+										  <li><a href="#">Информация</a></li>
+										  <li><a href="#">Заявка</a></li>
+										  <li><a href="#">Контакты</a></li>
+										</ul>
+								</div>
+						</div>
 						</div>
 						<div class="col-md-2 header_contacts">
 								<span class="phone">
@@ -58,8 +67,9 @@
 					</div>
 					</div>
 		</header>
+
 		<main class="main main_separator">
-			<div class="promo_map">
+			<div class="promo_map visible-lg visible-md">
 				<div class="promo_map_header">
 					<div class="container">
 						<div class="row">
@@ -146,10 +156,11 @@
 				</div>
 			</div>	
 			</div>
+
 			<div class="breadcrumbs">
 				<div class="container">
 						<div class="row">
-							<div class="col-md-12">
+							<div class="col-md-12 col-sm-12 col-xs-12">
 								<ul class="breadcrumb">
 							    <li><a href="#">Главная</a></li>
 							    <li><a href="#">Каталог</a></li>
@@ -159,10 +170,11 @@
 						</div>
 				</div>	
 			</div>
-			<div class="catalog_search">
+
+		<div class="catalog_search">
 				<div class="container">
 						<div class="row">
-							<div class="col-md-10 col-md-offset-1">
+							<div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
 								
 								<form class="catalog_search_form" action="1" method="POST" role="form">
 									<div class="catalog_search_form_tabs">
@@ -193,8 +205,6 @@
 										    <option  value="test2">test2</option>
 											</select>
 											</div>
-										</div>
-										<div class="form_group_input">
 											<div class="form_group_input_two">
 												<h6>Цена</h6>
 												<div class="input_block">
@@ -219,38 +229,36 @@
 										</div>
 										<div class="form_block_full">
 											<div class="form_group_input">
-												<div class="form_group_input_string">
-													<h6>Кол-во комнат:</h6>
-													<div class="input_block_short">
-														<input type="text" placeholder="До"  value="" >
-													</div>
-												</div>
 												<div class="form_group_input_two">
-													<h6>Количество комнат:</h6>
+													<h6>Колличество комнат:</h6>
 													<div class="input_block">
 														<input type="text" placeholder="От"  value="" >
 														<input type="text" placeholder="До"  value="" >
 													</div>
 												</div>
-												<div class="form_group_input_string">
-													<div class="input_block_short">
-														<h6>Кол-во этажей:</h6>
-														<input type="text"   value="" >
-													</div>
-													<div class="input_block_short">
-														<h6>Год постройки:</h6>
-														<input type="text" placeholder=""  value="" >
+												<div class="form_group_input_two">
+													<h6>Колличество ванных комнат:</h6>
+													<div class="input_block">
+														<input type="text" placeholder="От"  value="" >
+														<input type="text" placeholder="До"  value="" >
 													</div>
 												</div>
-											</div>
-											<div class="form_group_checkbox">
-												<div class="form_group_input_checkbox">
+												<div class="form_group_input_two">
+													<h6>Колличество этажей:</h6>
+													<div class="input_block">
+														<input type="text" placeholder="От"  value="" >
+														<input type="text" placeholder="До"  value="" >
+													</div>
+												</div>
+												<div class="form_group_input_two form_group_input_two_last">
 													<h6>Год постройки:</h6>
 													<div class="input_block">
 														<input type="text" placeholder="От"  value="" >
 														<input type="text" placeholder="До"  value="" >
 													</div>
 												</div>
+												<div class="form_group_checkbox">
+												
 												<ul class="checkbox_grop">
 													<li>
 														<input type="checkbox" class="css-checkbox" id="checkboxG5" checked="checked" value="">
@@ -269,19 +277,15 @@
 														<input type="checkbox" class="css-checkbox" id="checkbox2" " value="">
 														<label for="checkbox2" class="css-label">
 														</label>
-														<span>Мебелировка</span>
-													</li>
+														<span>Близость к морю</span>
 													
-												</ul>
-
-												<ul class="checkbox_grop">
+													</li>
 													<li>
 														<input type="checkbox" class="css-checkbox" id="checkbox4"  value="">
 														<label for="checkbox4" class="css-label">
 														</label>
 														<span>Отопление</span>
 													</li>
-
 													<li>
 														<input type="checkbox" class="css-checkbox" id="checkbox5"  value="">
 														<label for="checkbox5" class="css-label">
@@ -292,23 +296,21 @@
 														<input type="checkbox" class="css-checkbox" id="checkbox6"  value="">
 														<label for="checkbox6" class="css-label">
 														</label>
-														<span>Бассейн</span>
+															<span>Близость к метро</span>
+													
 													</li>
-												</ul>
-
-													<ul class="checkbox_grop">
 													<li>
 														<input type="checkbox" class="css-checkbox" id="checkbox7"  value="">
 														<label for="checkbox7" class="css-label">
 														</label>
-														<span>Близость к морю</span>
+															<span>Мебелировка</span>
 													</li>
 
 													<li>
 														<input type="checkbox" class="css-checkbox" id="checkbox8"  value="">
 														<label for="checkbox8" class="css-label">
 														</label>
-														<span>Близость к метро</span>
+														<span>Бассейн</span>
 													</li>
 														<li>
 														<input type="checkbox" class="css-checkbox" id="checkbox9"  value="">
@@ -317,7 +319,11 @@
 														<span>Близость к горам</span>
 													</li>
 												</ul>
+
+												</div>
+												</div>
 											</div>
+
 										</div>
 									</div>
 									<div class="catalog_search_form_button">
@@ -330,11 +336,12 @@
 							</div>
 						</div>
 				</div>	
-			</div>
+			
+
 			<div class="catalog_search_control_list">
 					<div class="container">
 						<div class="row">
-							<div class="col-md-12">
+							<div class="col-md-12 col-sm-12 col-xs-12">
 								<div class="catalog_search_control_list_block">
 										<h5>Сортировать по:</h5>
 										<ul>
@@ -347,20 +354,22 @@
 					</div>
 				</div>
 			</div>
+
 			<div class="catalog_products">
-				<div class="catalog_favorites_header">
+				<div class="catalog_products_header_viewed">
 					<div class="container">
 						<div class="row">
-							<div class="col-md-12">
-								
+							<div class="col-md-12 col-sm-12 col-xs-12">
 									<h3>
-										Избранные объекты недвижимости
+									ИЗБРАННЫЕ ОБЪЕКТЫ НЕДВИЖИМОСТИ
 									</h3>
 								</div>
 							</div>
 						</div>	
 					</div>
-					<div class="catalog_products_block">
+
+					<div class="catalog_products_block_viewed">
+
 						<div class="catalog_products_block_subtitle">
 							<div class="container">
 							<div class="row">
@@ -370,15 +379,19 @@
 								</div>
 							</div>
 						</div>
+
 						<div class="container">
 							<div class="row">
-								<div class="col-md-6 catalog_products_items_left">
+
+									<div class="col-md-6 col-sm-12 catalog_products_items_left">
+
 									<div class="catalog_products_item favorites_item">
-										<h5> Аликанте, вилла на берегу моря </h5>
+										<h5> Аликанте, вилла на берегу моря</h5>
 										<div class="catalog_products_item_control">
 											<span class="item_check checked">check</span>
 											<span class="item_close">&#215;</span>
 										</div>
+										
 										<div class="catalog_products_item_block">
 											<div class="img_wrapp">
 												<img src="images/prod1.jpg" alt="">
@@ -419,11 +432,12 @@
 										</div>
 									</div>
 									<div class="catalog_products_item favorites_item">
-										<h5> Аликанте, вилла на берегу моря </h5>
+										<h5> Аликанте, вилла на берегу моря</h5>
 										<div class="catalog_products_item_control">
 											<span class="item_check">check</span>
 											<span class="item_close">&#215;</span>
 										</div>
+										
 										<div class="catalog_products_item_block">
 											<div class="img_wrapp">
 												<img src="images/prod1.jpg" alt="">
@@ -464,11 +478,12 @@
 										</div>
 									</div>
 									<div class="catalog_products_item favorites_item">
-										<h5> Аликанте, вилла на берегу моря </h5>
+										<h5> Аликанте, вилла на берегу моря</h5>
 										<div class="catalog_products_item_control">
 											<span class="item_check">check</span>
 											<span class="item_close">&#215;</span>
 										</div>
+										
 										<div class="catalog_products_item_block">
 											<div class="img_wrapp">
 												<img src="images/prod1.jpg" alt="">
@@ -508,12 +523,17 @@
 											</a>
 										</div>
 									</div>
-									<div class="catalog_products_item favorites_item">
-										<h5> Аликанте, вилла на берегу моря </h5>
+								</div>
+
+								<div class="col-md-6 col-sm-12 catalog_products_items_right">
+									
+								<div class="catalog_products_item favorites_item">
+										<h5> Аликанте, вилла на берегу моря</h5>
 										<div class="catalog_products_item_control">
 											<span class="item_check">check</span>
 											<span class="item_close">&#215;</span>
 										</div>
+										
 										<div class="catalog_products_item_block">
 											<div class="img_wrapp">
 												<img src="images/prod1.jpg" alt="">
@@ -553,12 +573,61 @@
 											</a>
 										</div>
 									</div>
+
 									<div class="catalog_products_item favorites_item">
-										<h5> Аликанте, вилла на берегу моря </h5>
+										<h5> Аликанте, вилла на берегу моря</h5>
 										<div class="catalog_products_item_control">
 											<span class="item_check">check</span>
 											<span class="item_close">&#215;</span>
 										</div>
+										
+										<div class="catalog_products_item_block">
+											<div class="img_wrapp">
+												<img src="images/prod1.jpg" alt="">
+											</div>
+											<div class="text_wrapp">
+													<div class="price_block">
+															<span>Цена:</span>
+																<span class="price"><span class="symbol">$</span>146,203</span>
+																<span class="bookmark">*</span>
+														</div>
+														<a class="location" href="">
+																<span class="icon"><i class="icon-WAqf3x8n3I"></i></span>
+															<span class="desk black">Guardamar del Segura, <br> Alicante - Costa Blanca South </span>
+														</a>
+														<div class="type">
+															<span>Тип недвижимости: <strong>Элитное</strong></span>
+														</div>
+														<ul class="features">
+															<li>
+																<span class="icon"><i class="icon-ArBukpLo"></i></span>
+																<span class="black">1,614.60 sq ft </span>
+															</li>
+															<li>
+																<span class="icon"><i class="icon-r8COw2Ahsn"></i></span>
+																<span class="black">23 комнаты</span>
+															</li>
+															<li>
+																<span class="icon"><i class="icon-vyKaH0adjA"></i></span>
+																<span class="black">4 душа</span>
+															</li>
+														</ul>
+													</div>
+										</div>
+										<div class="link">
+											<a href="">
+												Подробнее	
+											</a>
+										</div>
+									</div>
+
+									<div class="catalog_products_item favorites_item">
+										<h5> Аликанте, вилла на берегу моря</h5>
+										<div class="catalog_products_item_control">
+											<span class="item_check">check</span>
+											<span class="item_close">&#215;</span>
+										</div>
+										
 										<div class="catalog_products_item_block">
 											<div class="img_wrapp">
 												<img src="images/prod1.jpg" alt="">
@@ -600,193 +669,36 @@
 									</div>
 
 								</div>
-								<div class="col-md-6 catalog_products_items_right">
-									<div class="catalog_products_item favorites_item">
-										<h5> Аликанте, вилла на берегу моря </h5>
-										<div class="catalog_products_item_control">
-											<span class="item_check">check</span>
-											<span class="item_close">&#215;</span>
-										</div>
-										<div class="catalog_products_item_block">
-											<div class="img_wrapp">
-												<img src="images/prod1.jpg" alt="">
-											</div>
-											<div class="text_wrapp">
-													<div class="price_block">
-															<span>Цена:</span>
-																<span class="price"><span class="symbol">$</span>146,203</span>
-																<span class="bookmark">*</span>
-														</div>
-														<a class="location" href="">
-																<span class="icon"><i class="icon-WAqf3x8n3I"></i></span>
-															<span class="desk black">Guardamar del Segura, <br> Alicante - Costa Blanca South </span>
-														</a>
-														<div class="type">
-															<span>Тип недвижимости: <strong>Элитное</strong></span>
-														</div>
-														<ul class="features">
-															<li>
-																<span class="icon"><i class="icon-ArBukpLo"></i></span>
-																<span class="black">1,614.60 sq ft </span>
-															</li>
-															<li>
-																<span class="icon"><i class="icon-r8COw2Ahsn"></i></span>
-																<span class="black">23 комнаты</span>
-															</li>
-															<li>
-																<span class="icon"><i class="icon-vyKaH0adjA"></i></span>
-																<span class="black">4 душа</span>
-															</li>
-														</ul>
-													</div>
-										</div>
-										<div class="link">
-											<a href="">
-												Подробнее	
-											</a>
-										</div>
+
+
+							</div>
+						</div>	
+					</div>
+				
+				<div class="catalog_products_block">
+
+						<div class="catalog_products_block_subtitle">
+							<div class="container">
+							<div class="row">
+									<div class="col-md-12">
+										<h4>Виллы</h4>
 									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="container">
+							<div class="row">
+
+									<div class="col-md-6 col-sm-12 catalog_products_items_left">
+	
 									<div class="catalog_products_item favorites_item">
-										<h5> Аликанте, вилла на берегу моря </h5>
+										<h5> Аликанте, вилла на берегу моря</h5>
 										<div class="catalog_products_item_control">
 											<span class="item_check">check</span>
 											<span class="item_close">&#215;</span>
 										</div>
-										<div class="catalog_products_item_block">
-											<div class="img_wrapp">
-												<img src="images/prod1.jpg" alt="">
-											</div>
-											<div class="text_wrapp">
-													<div class="price_block">
-															<span>Цена:</span>
-																<span class="price"><span class="symbol">$</span>146,203</span>
-																<span class="bookmark">*</span>
-														</div>
-														<a class="location" href="">
-																<span class="icon"><i class="icon-WAqf3x8n3I"></i></span>
-															<span class="desk black">Guardamar del Segura, <br> Alicante - Costa Blanca South </span>
-														</a>
-														<div class="type">
-															<span>Тип недвижимости: <strong>Элитное</strong></span>
-														</div>
-														<ul class="features">
-															<li>
-																<span class="icon"><i class="icon-ArBukpLo"></i></span>
-																<span class="black">1,614.60 sq ft </span>
-															</li>
-															<li>
-																<span class="icon"><i class="icon-r8COw2Ahsn"></i></span>
-																<span class="black">23 комнаты</span>
-															</li>
-															<li>
-																<span class="icon"><i class="icon-vyKaH0adjA"></i></span>
-																<span class="black">4 душа</span>
-															</li>
-														</ul>
-													</div>
-										</div>
-										<div class="link">
-											<a href="">
-												Подробнее	
-											</a>
-										</div>
-									</div>
-									<div class="catalog_products_item favorites_item">
-										<h5> Аликанте, вилла на берегу моря </h5>
-										<div class="catalog_products_item_control">
-											<span class="item_check">check</span>
-											<span class="item_close">&#215;</span>
-										</div>
-										<div class="catalog_products_item_block">
-											<div class="img_wrapp">
-												<img src="images/prod1.jpg" alt="">
-											</div>
-											<div class="text_wrapp">
-													<div class="price_block">
-															<span>Цена:</span>
-																<span class="price"><span class="symbol">$</span>146,203</span>
-																<span class="bookmark">*</span>
-														</div>
-														<a class="location" href="">
-																<span class="icon"><i class="icon-WAqf3x8n3I"></i></span>
-															<span class="desk black">Guardamar del Segura, <br> Alicante - Costa Blanca South </span>
-														</a>
-														<div class="type">
-															<span>Тип недвижимости: <strong>Элитное</strong></span>
-														</div>
-														<ul class="features">
-															<li>
-																<span class="icon"><i class="icon-ArBukpLo"></i></span>
-																<span class="black">1,614.60 sq ft </span>
-															</li>
-															<li>
-																<span class="icon"><i class="icon-r8COw2Ahsn"></i></span>
-																<span class="black">23 комнаты</span>
-															</li>
-															<li>
-																<span class="icon"><i class="icon-vyKaH0adjA"></i></span>
-																<span class="black">4 душа</span>
-															</li>
-														</ul>
-													</div>
-										</div>
-										<div class="link">
-											<a href="">
-												Подробнее	
-											</a>
-										</div>
-									</div>
-									<div class="catalog_products_item favorites_item">
-										<h5> Аликанте, вилла на берегу моря </h5>
-										<div class="catalog_products_item_control">
-											<span class="item_check">check</span>
-											<span class="item_close">&#215;</span>
-										</div>
-										<div class="catalog_products_item_block">
-											<div class="img_wrapp">
-												<img src="images/prod1.jpg" alt="">
-											</div>
-											<div class="text_wrapp">
-													<div class="price_block">
-															<span>Цена:</span>
-																<span class="price"><span class="symbol">$</span>146,203</span>
-																<span class="bookmark">*</span>
-														</div>
-														<a class="location" href="">
-																<span class="icon"><i class="icon-WAqf3x8n3I"></i></span>
-															<span class="desk black">Guardamar del Segura, <br> Alicante - Costa Blanca South </span>
-														</a>
-														<div class="type">
-															<span>Тип недвижимости: <strong>Элитное</strong></span>
-														</div>
-														<ul class="features">
-															<li>
-																<span class="icon"><i class="icon-ArBukpLo"></i></span>
-																<span class="black">1,614.60 sq ft </span>
-															</li>
-															<li>
-																<span class="icon"><i class="icon-r8COw2Ahsn"></i></span>
-																<span class="black">23 комнаты</span>
-															</li>
-															<li>
-																<span class="icon"><i class="icon-vyKaH0adjA"></i></span>
-																<span class="black">4 душа</span>
-															</li>
-														</ul>
-													</div>
-										</div>
-										<div class="link">
-											<a href="">
-												Подробнее	
-											</a>
-										</div>
-									</div>
-									<div class="catalog_products_item favorites_item">
-										<h5> Аликанте, вилла на берегу моря </h5>
-										<div class="catalog_products_item_control">
-											<span class="item_check">check</span>
-											<span class="item_close">&#215;</span>
-										</div>
+										
 										<div class="catalog_products_item_block">
 											<div class="img_wrapp">
 												<img src="images/prod1.jpg" alt="">
@@ -827,10 +739,66 @@
 										</div>
 									</div>
 								</div>
+
+								<div class="col-md-6 col-sm-12 catalog_products_items_right">
+									
+								<div class="catalog_products_item favorites_item">
+										<h5> Аликанте, вилла на берегу моря</h5>
+										<div class="catalog_products_item_control">
+											<span class="item_check checked">check</span>
+											<span class="item_close">&#215;</span>
+										</div>
+										
+										<div class="catalog_products_item_block">
+											<div class="img_wrapp">
+												<img src="images/prod1.jpg" alt="">
+											</div>
+											<div class="text_wrapp">
+													<div class="price_block">
+															<span>Цена:</span>
+																<span class="price"><span class="symbol">$</span>146,203</span>
+																<span class="bookmark">*</span>
+														</div>
+														<a class="location" href="">
+																<span class="icon"><i class="icon-WAqf3x8n3I"></i></span>
+															<span class="desk black">Guardamar del Segura, <br> Alicante - Costa Blanca South </span>
+														</a>
+														<div class="type">
+															<span>Тип недвижимости: <strong>Элитное</strong></span>
+														</div>
+														<ul class="features">
+															<li>
+																<span class="icon"><i class="icon-ArBukpLo"></i></span>
+																<span class="black">1,614.60 sq ft </span>
+															</li>
+															<li>
+																<span class="icon"><i class="icon-r8COw2Ahsn"></i></span>
+																<span class="black">23 комнаты</span>
+															</li>
+															<li>
+																<span class="icon"><i class="icon-vyKaH0adjA"></i></span>
+																<span class="black">4 душа</span>
+															</li>
+														</ul>
+													</div>
+										</div>
+										<div class="link">
+											<a href="">
+												Подробнее	
+											</a>
+										</div>
+									</div>
+
+								</div>
+
+
 							</div>
 						</div>	
 					</div>
+
 			</div>
+
+
 			<div class="favorites_control">
 				<div class="container">
 					<div class="row">
@@ -845,19 +813,19 @@
 					</div>
 				</div>
 			</div>
-			</div>
 		</main>
-		<footer class="footer">
+
+		<footer class="footer footer_gray">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-2">
-								<div class="footer_logo">
+						<div class="col-md-3 col-lg-2 col-sm-9 col-xs-10 footer_left_block">
+								<div class="footer_logo col-md-12 col-sm-4 col-xs-3">
 								<a href="#">
 									<img src="images/logo2.png" alt="logo">
 									<span>IMPERIO MERIDIONAL</span>
 								</a>
 							</div>
-							<div class="footer_contacts">
+							<div class="footer_contacts col-md-12 col-sm-4 col-xs-3">
 								<a href="#">
 									Контакты
 								</a>
@@ -865,6 +833,7 @@
 									Связаться с нами
 								</a>
 							</div>
+							<div class="footer_center_block col-md-12 col-sm-4 col-xs-5">
 							<div class="footer_copyright">
 								<span>
 									2017 © 
@@ -880,8 +849,9 @@
 								<a href=""><i class="icon-EIAXh26hsl"></i></a>
 
 							</div>
+							</div>
 						</div>
-						<div class="col-md-4">
+						<div class="col-lg-4 col-md-4 visible-md visible-lg">
 							<ul class="main_footer_links">
 								<li><a href="">Жилая недвижимость Испания</a></li>
 								<li><a href="">Земельные участки в Испании</a></li>
@@ -904,7 +874,7 @@
 								<li><a href="">Ферма</a></li>
 							</ul>
 					 	</div>
-					 	<div class="col-md-2">
+					 	<div class="col-lg-2 col-md-2 visible-md visible-lg">
 					 		<div class="footer_links_type">
 					 			<h6>Типы недвижимости</h6>
 								<ul>
@@ -927,7 +897,7 @@
 								</ul>
 					 		</div>
 					 	</div>
-					 	 	<div class="col-md-2 col-md-offset-1 ">
+					 	 	<div class="col-lg-2 col-md-2 col-lg-offset-1  col-sm-3 col-xs-2 footer_right_block">
 							<div class="footer_links_regions">
 					 			<h6>Популярные регионы</h6>
 								<ul>
@@ -958,6 +928,7 @@
 					</div>
 				</div>
 		</footer>
+
 	</div>	
 		
 	 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>

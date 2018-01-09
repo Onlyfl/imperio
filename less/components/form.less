@@ -91,11 +91,42 @@
 	}
 }
 .form_group_select {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	display: inline-block;
 	margin-bottom: 25px;
+> div {
+	display: inline-block;
+	margin-bottom: 15px;
+	margin-right: 5%;
+	&:nth-child(3n) {
+		margin-right: 0;
+	}
+}
+	
+}
+.form_group_input {
+	vertical-align: top;
+	.form_group_select;
+	display: block;
 
+}
+
+.form_group_input_string {
+	width: 265px;
+h6 {
+		display: inline-block;
+		font-size: 14px;
+	}
+	 input {
+		width: 115px;
+		padding-left: 8px;
+	}
+	.input_block {
+		width: 265px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		
+	}
 	
 }
 .form_group_select_block {
@@ -125,10 +156,9 @@
 	
 	}
 }
-.form_group_input {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+
+.form_group_input_two {
+
 	margin-bottom: 25px;
 	input {
 		width: 115px;
@@ -148,10 +178,39 @@
 		justify-content: space-between;
 		
 	}
+	
+}
+.form_group_input_two_last {
+	position: relative;
+	top: -50px;
+}
+.form_group_input_string_short {
+	width: 265px;
+}
+.input_block_short_wrapp {
+	font-size: 0;
+
 	.input_block_short {
-		width: 115px;
+		font-size: 14px;
+			margin-right: 13%;
+		&:nth-child(2n) {
+		margin-right: 0;
+	}
+
 	}
 }
+.input_block_short {
+	width: 115px;
+	display: inline-block;
+	input {
+		width: 115px;
+		padding-left: 8px;
+	}
+	h6 {
+		font-size: 14px;
+	}
+	}
+
 .form_group_input_checkbox {
 	input {
 		width: 115px;
@@ -176,34 +235,28 @@
 .form_block_full {
 		display: none;
 	}
-.form_group_input_string {
-	width: 265px;
-	display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: flex-end;
-	h6 {
-		display: inline-block;
-	}
-	
-}
-.form_group_checkbox {
-	padding-top: 25px;
-	padding-bottom: 25px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
 
+div.form_group_checkbox {
+	padding-top: 40px;
+	width: 61%;
+	margin: 0;
 	.checkbox_grop {
 		display: block;
 		margin: 0;
 		padding: 0;
 		list-style: none;
-
 		li {
 		vertical-align: top;
+		display: inline-block;
+		width: 160px;
 		line-height: 1em;
 		margin-bottom: 15px;
+		margin-right: 7%;
+		&:nth-child(3n) {
+		margin-right: 0;
+		margin-left: 10px;
+		width: 155px;
+		}
 		span {
 			display: inline-block;
 			margin-left: 5px;

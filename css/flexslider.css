@@ -283,6 +283,14 @@ html[xmlns] .flexslider .slides {
 /* ====================================================================================================================
  * RESPONSIVE
  * ====================================================================================================================*/
+@media screen and (max-width: 1200px) { 
+  .main_product_info_slider .flex-control-thumbs {
+    display: none;
+  }
+  .main_product_info_slider .flex-viewport {
+    margin-bottom: 43px;
+  }
+}
 @media screen and (max-width: 860px) {
   .flex-direction-nav .flex-prev {
     opacity: 1;
