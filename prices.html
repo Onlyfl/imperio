@@ -15,10 +15,11 @@
 </head>
 <body>
 	<div class="wrapper">
-		<header class="header">
-			<div class="container">
+
+			<header class="header header_short_mobile">
+				<div class="container">
 					<div class="row">
-						<div class="col-md-2">
+						<div class="col-md-2 col-sm-2 col-xs-2 ">
 							<div class="header_logo">
 								<a href="#">
 									<img src="images/logo.png" alt="logo">
@@ -26,14 +27,23 @@
 								</a>
 							</div>
 						</div>
-						<div class="col-md-6 header_navbar">
-							 <ul class="header_nav">
-								  <li class="active"><a href="#">Главная</a></li>
-								   <li><a href="#">Недвижимость</a></li>
-								  <li><a href="#">Информация</a></li>
-								  <li><a href="#">Заявка</a></li>
-								  <li><a href="#">Контакты</a></li>
-								</ul>
+						<div class="col-md-6 col-md-offset-0 col-sm-3 col-sm-offset-7 col-xs-3 col-xs-offset-7">
+							<div class="header_navbar_block">
+								<div class="header_navbar">
+									<button type="button" class="navbar-toggle">
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						      </button>
+									 <ul class="header_nav">
+										  <li class="active"><a href="#">Главная</a></li>
+										   <li><a href="#">Недвижимость</a></li>
+										  <li><a href="#">Информация</a></li>
+										  <li><a href="#">Заявка</a></li>
+										  <li><a href="#">Контакты</a></li>
+										</ul>
+								</div>
+						</div>
 						</div>
 						<div class="col-md-2 header_contacts">
 								<span class="phone">
@@ -58,8 +68,10 @@
 					</div>
 					</div>
 		</header>
+
 		<main class="main main_separator">
-			<div class="promo_map">
+			
+			<div class="promo_map visible-lg visible-md">
 				<div class="promo_map_header">
 					<div class="container">
 						<div class="row">
@@ -146,10 +158,11 @@
 				</div>
 			</div>	
 			</div>
+
 			<div class="breadcrumbs">
 				<div class="container">
 						<div class="row">
-							<div class="col-md-12">
+							<div class="col-md-12 col-sm-12 col-xs-12">
 								<ul class="breadcrumb">
 							    <li><a href="#">Главная</a></li>
 							    <li><a href="#">Каталог</a></li>
@@ -159,11 +172,13 @@
 						</div>
 				</div>	
 			</div>
+
 			<div class="catalog_prices">
+
 				<div class="catalog_prices_header">
 					<div class="container">
 						<div class="row">
-							<div class="col-md-12">
+							<div class="col-md-12 col-sm-12 col-xs-12">
 									<h1>
 										Цены на недвижимость
 									</h1>
@@ -171,17 +186,48 @@
 							</div>
 						</div>	
 					</div>
+
 					<div class="catalog_prices_search">
 						<div class="container">
 							<div class="row">
-								<div class="col-md-7 col-md-offset-3">
+								<div class="col-lg-7 col-md-offset-3 col-md-8 col-md-offset-2">
 									<form action="2" class="catalog_prices_search_form">
-										<div class="form_group_select_block">
+										<div class="form_group_select_block sel sel--black-panther">
 											<select name="" >
 												<option selected disabled>Тип недвижимости</option>
-										    <option value="Квартира">Квартира</option>
-										    <option  value="Дом">Дом</option>
+												<option value="h1">недвижимость на побережье </option>
+										    <option  value="h2">элитная недвижимость </option>
+										    <option value="h3">недвижимость от банков</option>
+										    <option  value="h4">недвижимость в ипотеку</option>
+											<option value="h5">недвижимость в горах </option>
+										    <option  value="h6">недвижимость для ВНЖ </option>
+										    <option value="h7">офис</option>
+										    <option  value="h8">склад</option>
+
+												<option value="h9">готовый бизнес </option>
+										    <option  value="h10">отель </option>
+										    <option value="h11">виноградник</option>
+										    <option  value="h12">производство</option>
+											<option value="h13">ферма </option>
+										    <option  value="h14">земельный участок </option>
+										    <option value="h15">кондоминиум</option>
+										    <option  value="h16">замок</option>
+										    	<option value="h17">вторичка </option>
+										    <option  value="h18">дуплекс </option>
+										    <option value="h19">дом</option>
+										    <option  value="h20">квартира</option>
+											<option value="h21">апартаменты </option>
+										    <option  value="h22">вилла </option>
+										    <option value="h23">дача</option>
+										    <option  value="h24">шале</option>
+
+												<option value="h25">пентхаус </option>
+										    <option  value="h26">студия </option>
+										    <option value="h27">коттедж, бунгало</option>
+										    <option  value="h28">новостройка</option>
+											<option value="h29">таунхаус </option>
 											</select>
+											
 										</div>
 										<div class="form_group_input_string">
 													<h6>Цена:</h6>
@@ -193,18 +239,20 @@
 							</div>
 						</div>	
 					</div>
+
 					<div class="catalog_prices_tabs">
 						<div class="container">
 							<div class="row">
-								<div class="col-md-12">
+								<div class="col-md-12 col-sm-12 col-xs-12">
 									<div class="catalog_prices_tabs_block">
-									<span class="short_form active">Средние цены на недвижимость [Страна] <span class="catalog_prices_tabs_bookmark">[?]<span class="tooltip_tabs">
+									<span class="first_table_tab active">Средние цены на недвижимость [Страна] <span class="catalog_prices_tabs_bookmark">[?]<span class="tooltip_tabs">
 										Средняя цена по всем объектам
 									</span>
 								</span>
 							</span>
-											<span class="full_form">Цены на недвижимость [Страна]</span>
+								<span class="second_table_tab">Цены на недвижимость [Страна]</span>
 									</div>
+
 									<div class="catalog_prices_table">
 											<table class="table table-bordered table-hover">
 												<thead>
@@ -249,23 +297,86 @@
 												</tbody>
 											</table>
 									</div>
+									
+									<div class="catalog_prices_table_second">
+											<table class="table table-bordered table-hover">
+												<thead>
+													<tr>
+														<th colspan="2">&nbsp;</th>
+														<th colspan="2" >Квартиры, евро/кв.м.</th>
+														<th colspan="2" >Виллы, евро/кв.м.</th>
+														<th colspan="2" >У моря, евро/кв.м.</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td  colspan="2">Провинция</td>
+														<td class="half">500</td>
+														<td class="half">500</td>
+														<td class="half">500</td>
+														<td class="half">500</td>
+														<td class="half">500</td>
+														<td class="half">500</td>
+													</tr>
+													<tr>
+														<td  colspan="2">Провинция</td>
+														<td class="half">500</td>
+														<td class="half">500</td>
+														<td class="half">500</td>
+														<td class="half">500</td>
+														<td class="half">500</td>
+														<td class="half">500</td>
+													</tr>
+													<tr>
+														<td  colspan="2">Провинция</td>
+														<td class="half">500</td>
+														<td class="half">500</td>
+														<td class="half">500</td>
+														<td class="half">500</td>
+														<td class="half">500</td>
+														<td class="half">500</td>
+													</tr>
+													<tr>
+														<td  colspan="2">Провинция</td>
+														<td class="half">500</td>
+														<td class="half">500</td>
+														<td class="half">500</td>
+														<td class="half">500</td>
+														<td class="half">500</td>
+														<td class="half">500</td>
+													</tr>
+													<tr>
+														<td  colspan="2">Провинция</td>
+														<td class="half">500</td>
+														<td class="half">500</td>
+														<td class="half">500</td>
+														<td class="half">500</td>
+														<td class="half">500</td>
+														<td class="half">500</td>
+													</tr>
+												</tbody>
+											</table>
+									</div>
+
 								</div>
 							</div>
 						</div>
 					</div>
 			</div>
 		</main>
-		<footer class="footer">
+
+		
+		<footer class="footer footer_gray">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-2">
-								<div class="footer_logo">
+						<div class="col-md-3 col-lg-2 col-sm-9 col-xs-10 footer_left_block">
+								<div class="footer_logo col-md-12 col-sm-4 col-xs-3">
 								<a href="#">
 									<img src="images/logo2.png" alt="logo">
 									<span>IMPERIO MERIDIONAL</span>
 								</a>
 							</div>
-							<div class="footer_contacts">
+							<div class="footer_contacts col-md-12 col-sm-4 col-xs-3">
 								<a href="#">
 									Контакты
 								</a>
@@ -273,6 +384,7 @@
 									Связаться с нами
 								</a>
 							</div>
+							<div class="footer_center_block col-md-12 col-sm-4 col-xs-5">
 							<div class="footer_copyright">
 								<span>
 									2017 © 
@@ -288,8 +400,9 @@
 								<a href=""><i class="icon-EIAXh26hsl"></i></a>
 
 							</div>
+							</div>
 						</div>
-						<div class="col-md-4">
+						<div class="col-lg-4 col-md-4 visible-md visible-lg">
 							<ul class="main_footer_links">
 								<li><a href="">Жилая недвижимость Испания</a></li>
 								<li><a href="">Земельные участки в Испании</a></li>
@@ -312,7 +425,7 @@
 								<li><a href="">Ферма</a></li>
 							</ul>
 					 	</div>
-					 	<div class="col-md-2">
+					 	<div class="col-lg-2 col-md-2 visible-md visible-lg">
 					 		<div class="footer_links_type">
 					 			<h6>Типы недвижимости</h6>
 								<ul>
@@ -335,7 +448,7 @@
 								</ul>
 					 		</div>
 					 	</div>
-					 	 	<div class="col-md-2 col-md-offset-1 ">
+					 	 	<div class="col-lg-2 col-md-2 col-lg-offset-1  col-sm-3 col-xs-2 footer_right_block">
 							<div class="footer_links_regions">
 					 			<h6>Популярные регионы</h6>
 								<ul>
@@ -366,10 +479,12 @@
 					</div>
 				</div>
 		</footer>
+
 	</div>	
 		
 	 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
    <script src="js/bootstrap.min.js"></script>
+    <script src="js/select.js"></script>
     <script src="js/imperio.js"></script>
 		
 </body>

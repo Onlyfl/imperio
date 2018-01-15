@@ -128,6 +128,7 @@ background-size: cover;
 .features_main_items_block {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	span {	
 		width: 92px;
 		height: 83px;
@@ -336,6 +337,9 @@ background-size: cover;
 		font-size: 18px;
 		text-align: center;
 		margin-top: 5px;
+		&:hover {
+			color: #ffffff;
+		}
 }
 .footer {
 	padding-top: 70px;
@@ -1460,31 +1464,77 @@ background-size: cover;
 }
 .catalog_prices_table {
 	border: 1px solid #ddd;
-	margin-bottom: 100px;
+	.table {
+	margin: 0;
 	table {
 		margin: 0;
-			tr {
-				th {
+	}
+	th {
 		width: 25%;
 		text-align: center;
 		border-bottom-width: 1px;
 		padding: 12px 8px 12px;
 		background-color: #ececec;
+		height: 56px;
+		vertical-align: middle;
 		}
-				td {
+	td {
 			width: 25%;
 			text-align: center;
 			padding: 12px 8px 12px;
 			font-weight: bold;
+			height: 56px;
+		vertical-align: middle;
 			&:first-child {
 				text-align: left;
 				padding-left: 15px;
 				text-decoration: underline;
 			}
-			}
 		}
 	}
 }
+
+
+.catalog_prices_table_second {
+	border: 1px solid #ddd;
+	display: none;
+	.table {
+	margin: 0;
+	table {
+		margin: 0;
+	}
+	th {
+		width: 12.5%;
+		text-align: center;
+		border-bottom-width: 1px;
+		padding: 12px 8px 12px;
+		background-color: #ececec;
+		height: 56px;
+		vertical-align: middle;
+			&:first-child {
+				width: 25%;
+			}
+	}
+	td {
+		width: 12.5%;
+		text-align: center;
+		padding: 12px 8px 12px;
+		font-weight: bold;
+		height: 56px;
+		vertical-align: middle;
+			&:first-child {
+				text-align: left;
+				padding-left: 15px;
+				text-decoration: underline;
+				width: 25%;
+			}
+	}
+	}
+	
+	
+}
+
+
 .catalog_comparison_table_block {
 	border: 3px solid #cdcdcd;
 }
@@ -1599,6 +1649,27 @@ background-size: cover;
 			}
 		}
 	}
+}
+.privacy {
+	font-size: 11px;
+	position: fixed;
+	display: block;
+	width: 100%;
+	bottom: 0;
+	color: #292929;
+	background-color: rgba(142, 142, 142, 0.7);
+	padding: 12px 20px;
+	z-index: 120;
+}
+.privacy_close {
+	cursor: pointer;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	position: absolute;
+	z-index: 121;
+	right: 15px;
+	top: 8px;
 }
 @media (max-width: 1200px)  {
 	.header_contacts {
@@ -1763,6 +1834,28 @@ div.form_group_checkbox {
 }
 .flex-viewport {
 	height: 640px;
+}
+.catalog_prices_header h1 {
+	font-size: 18px;
+}
+.catalog_prices_tabs_block > span {
+	font-size: 12px;
+	padding-bottom: 30px;
+	height: 17px;
+}
+span.catalog_prices_tabs_bookmark {
+	font-size: 12px;
+}
+.catalog_prices_table .table td, .catalog_prices_table .table th {
+	height: 43px;
+	font-size: 10px;
+}
+.catalog_prices_table_second .table th, .catalog_prices_table_second .table td {
+	height: 43px;
+	font-size: 10px;
+}
+.catalog_prices_tabs {
+	padding-bottom: 45px;
 }
 }
 @media (max-width: 1016px)  {
@@ -1977,7 +2070,11 @@ div.form_group_checkbox {
 		padding: 6px 12px;
 		font-size: 12px;
 		margin-top: 5px;
+	
 }
+
+
+
 .catalog_history_header_block {
 	font-size: 18px;
 }
@@ -2116,6 +2213,29 @@ div.form_group_checkbox {
 .catalog_products_header_similar h3 {
 	font-size: 14px;
 }
+.catalog_prices_header {
+	padding: 25px 0;
+	margin-bottom: 0;
+}
+.catalog_prices_search_form .form_group_input_string {
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+.catalog_prices_search_form {
+	align-items: flex-end;
+
+}
+.catalog_prices_search_form .form_group_input_string h6 {
+	display: block;
+	margin-right: 60%;
+	font-size: 11px;
+}
+.catalog_prices_search_form input {
+	margin-right: 25px;
+}
+.form_group_select_block {
+	height: 30px;
+} 
 }
 
 @media (max-width: 767px)  {
@@ -2492,6 +2612,37 @@ margin: 0 10px;
 }
 .main_product_control {
 	margin-bottom: 40px;
+}
+.catalog_prices_header h1 {
+	font-size: 14px;
+}
+.catalog_prices_search_form {
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.catalog_prices_search_form .form_group_input_string {
+	
+}
+.catalog_prices_search_form .form_group_input_string {
+	width: auto;
+	justify-content: space-between;
+}
+.catalog_prices_search_form input {
+	margin-right: 0;
+}
+.form_group_select_block {
+	margin-bottom: 15px;
+}
+.catalog_prices_tabs_block {
+	text-align: center;
+} 
+.catalog_prices_tabs_block > span {
+	padding-bottom: 20px;
+	font-size: 11px;
+	margin-bottom: 15px;
+	margin-right: 10%;
+	margin-left: 10%;
 }
 }
 
