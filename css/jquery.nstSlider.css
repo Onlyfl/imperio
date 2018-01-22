@@ -1,0 +1,87 @@
+.track_slider {
+  padding: 40px 0 10px;
+}
+
+.is_clickable {
+  cursor: hand;
+  cursor: pointer;
+}
+.nstSlider {
+  cursor: hand;
+  cursor: pointer;
+  position: relative;
+  width: 300px;
+  height: 5px;
+ background: #102f3c;
+background: -moz-linear-gradient(top, #102f3c 0%, #123443 25%, #154052 50%, #1b5167 75%, #236783 100%);
+background: -webkit-linear-gradient(top, #102f3c 0%,#123443 25%,#154052 50%,#1b5167 75%,#236783 100%);
+background: linear-gradient(to bottom, #102f3c 0%,#123443 25%,#154052 50%,#1b5167 75%,#236783 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#102f3c', endColorstr='#236783',GradientType=0 );
+  z-index: 2;
+  margin-bottom: 5px;
+}
+.nstSlider .leftGrip.gripHighlighted {
+  background: #113344;
+}
+.nstSlider .rightGrip.gripHighlighted {
+  background: #113344;
+}
+.nstSlider .rightGrip,
+.nstSlider .leftGrip {
+  position: absolute;
+  background:  url(../images/track.png) 0 0 no-repeat;
+  width: 6px;
+  height: 14px;
+  top: -4px;
+  z-index: 3;
+}
+.nstSlider .bar {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  position: absolute;
+  background: #3fbcef;
+  height: 6px;
+  top: 0;
+}
+.nstSlider .highlightPanel {
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  position: absolute;
+  background: #e87722;
+  height: 14px;
+  top: 0;
+}
+.leftLabel, .rightLabel {
+  display: none;
+}
+.track_slider_scale {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.track_slider_scale .scale_block {
+  color: #999999;
+  position: relative;
+}
+.track_slider_scale .scale_mark{
+  display: block;
+}
+.track_slider_scale .scale_count{
+  font-size: 9px;
+  display: block;
+  position: relative;
+}
+.track_slider_scale .scale_count.last{right: -10px;}
+.track_slider_scale .scale_count.first{left: -3px;}

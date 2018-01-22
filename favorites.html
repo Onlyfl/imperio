@@ -6,7 +6,11 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/jquery.nstSlider.css">
 	<link rel="stylesheet" href="css/main.css">
+
+
+	
 
 	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -803,7 +807,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-								<div class="favorites_control_button">
+								<div class="favorites_control_button favorites_subscribe">
 										<span class="text">Сделать заявку на просмотр</span>
 									</div>
 									<div class="favorites_control_button">
@@ -931,9 +935,246 @@
 
 	</div>	
 		
-	 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-   <script src="js/bootstrap.min.js"></script>
-    <script src="js/imperio.js"></script>
+		<div class="wrapper_filter" id="form2">
+		<div class="closfon"></div>
+		<div class="form_main form_main_short" >
+		<form action="" method="POST" role="form">
+
+		<div class="form_main_short_form_wrapp">
+
+			<legend>Заполните заявку</legend>
+			<div class="form_field_top">
+				<span class="error">Неверно заполнен телефон</span>
+				<div class="form-group">
+					<label for="">Имя</label>
+					<input type="text" class="success_input" id="" >
+				</div>
+				<div class="form-group">
+					<label for="">E-mail</label>
+					<input type="text" class="" id="" >
+				</div>
+				<div class="form-group">
+					<label for="">Телефон</label>
+					<input type="text" class="" id="" >
+				</div>
+			</div>
+			<span class="form_message__note">Поля отмеченные <span>*</span> обязательны для заполнения</span>
+
+			<div class="additional_information">Сообщите нам больше информации о вас, и мы сэкономим ваше время и 
+				подготовим для вас все необходимые сведения.
+			</div>
+			<div class="close_inf">Свернуть</div>
+			</div>
+
+			<div class="form_main_short_form_wrapp2">
+
+			<div class="additional_information_main_wrapp">
+				<div class="additional_information_main">
+					<div class="additional_information_block">
+						<div class="form-group">
+							<h5>Страна проживания (гражданство)</h5>
+							<input type="text" class="" id="" >
+						</div>
+						<div class="form-group">
+							<h5>Предпочитаемый язык </h5>
+							<ul class="form-group_checkbox inline">
+								<li>
+										<input type="checkbox" class="css-checkbox" id="checkboxE1"  value="">
+										<label for="checkboxE1" class="css-label">
+										</label>
+										<span>Русский</span>
+									</li>
+								<li>
+										<input type="checkbox" class="css-checkbox" id="checkboxE2"  value="">
+										<label for="checkboxE2" class="css-label">
+										</label>
+										<span>Английский</span>
+									</li>
+									<li>
+										<input type="checkbox" class="css-checkbox" id="checkboxE3"  value="">
+										<label for="checkboxE3" class="css-label">
+										</label>
+										<span>Испанский</span>
+									</li>
+							</ul>
+							<input type="text" class="" id="" placeholder="Введите свой язык" >
+						</div>
+						<div class="form-group">
+							<h5>Цель обращения</h5>
+							<div class="form-group_dd"><span>Покупка недвижимости</span></div>
+							<div class="form-group_hidden">
+							<h6>Цель покупки</h6>
+
+							<ul class="form-group_checkbox">
+								<li>
+										<input type="checkbox" class="css-checkbox" id="checkboxH1"  value="">
+										<label for="checkboxH1" class="css-label">
+										</label>
+										<span>Для постоянного проживания</span>
+									</li>
+								<li>
+										<input type="checkbox" class="css-checkbox" id="checkboxH2"  value="">
+										<label for="checkboxH2" class="css-label">
+										</label>
+										<span>Для  получения ВНЖ</span>
+									</li>
+									<li>
+										<input type="checkbox" class="css-checkbox" id="checkboxH3"  value="">
+										<label for="checkboxH3" class="css-label">
+										</label>
+										<span>Для сдачи в аренду</span>
+									</li>
+									<li>
+										<input type="checkbox" class="css-checkbox" id="checkboxH4"  value="">
+										<label for="checkboxH4" class="css-label">
+										</label>
+										<span>Для инвестиций</span>
+									</li>
+									<li>
+										<input type="checkbox" class="css-checkbox" id="checkboxH5"  value="">
+										<label for="checkboxH5" class="css-label">
+										</label>
+										<span>Для отдыха</span>
+									</li>
+							</ul>
+								<div class="input_group">
+									<ul class="form-group_checkbox inline">
+								<li>
+										<input type="checkbox" class="css-checkbox" id="checkboxI1"  value="">
+										<label for="checkboxI1" class="css-label">
+										</label>
+										<span>Подобрать вариант под ваш бюджет?</span>
+									</li>
+							</ul>
+								<input type="text" class="" id="" placeholder="От" >
+								<input type="text" class="" id="" placeholder="До" >
+
+
+
+								<div class="track_slider">
+								  
+									<div class="nstSlider" data-range_min="50000" data-range_max="1500000" 
+                       data-cur_min="600000"    data-cur_max="900000">
+
+									    <div class="bar"></div>
+									    <div class="leftGrip"></div>
+									    <div class="rightGrip"></div>
+									</div>
+									<div class="leftLabel" ></div>
+									<div class="rightLabel" ></div>
+
+									<div class="track_slider_scale">
+										<div class="scale_block">
+												<span class="scale_mark">&#124;</span>
+												
+										</div>
+										<div class="scale_block">
+												<span class="scale_mark">&#124;</span>
+												
+										</div>
+										<div class="scale_block">
+												<span class="scale_mark">&#124;</span>
+												
+										</div>
+										<div class="scale_block">
+												<span class="scale_mark">&#124;</span>
+											
+										</div>
+										<div class="scale_block">
+												<span class="scale_mark">&#124;</span>
+												
+										</div>
+									</div>
+									<div class="track_slider_scale">
+										<div class="scale_block">
+												<span class="scale_count first">50 000$</span>
+												
+										</div>
+										<div class="scale_block">
+												<span class="scale_count">500 000$</span>
+												
+										</div>
+										<div class="scale_block">
+												<span class="scale_count">900 000$</span>
+												
+										</div>
+										<div class="scale_block">
+												<span class="scale_count">&#160;</span>
+											
+										</div>
+										<div class="scale_block">
+												<span class="scale_count last">1 500 000$</span>
+												
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+							<div class="input_group">
+									<ul class="form-group_checkbox inline">
+								<li>
+										<input type="checkbox" class="css-checkbox" id="checkboxJ1"  value="">
+										<label for="checkboxJ1" class="css-label">
+										</label>
+										<span>Подобрать объект вашей мечты?</span>
+									</li>
+							</ul>
+								<textarea name="" placeholder="Опишите искомый объект" rows="3" required="required"></textarea>
+							</div>
+							</div>
+
+							<div class="form-group_dd"><span>Юридические вопросы</span></div>
+							<div class="form-group_hidden">
+
+							<div class="input_group">
+									
+								<textarea name="" placeholder="Если у Вас есть вопросы юридического характера, Вы можете задать их в этом блоке." rows="3" required="required"></textarea>
+							</div>
+							</div>
+
+							<div class="form-group_dd"><span>Продажа недвижимости</span></div>
+							<div class="form-group_hidden">
+
+							<div class="input_group">
+									
+								<textarea name="" placeholder="Если у Вас есть вопросы юридического характера, Вы можете задать их в этом блоке." rows="3" required="required"></textarea>
+							</div>
+							</div>
+
+							<div class="form-group_dd"><span>Управление объектов недвижимости</span></div>
+							<div class="form-group_hidden">
+
+							<div class="input_group">
+									
+								<textarea name="" placeholder="Если у Вас есть вопросы юридического характера, Вы можете задать их в этом блоке." rows="3" required="required"></textarea>
+							</div>
+							</div>
+
+						</div>	
+
+					</div>
+				</div>
+
+					<button type="button" class="">Отправить заявку</button>
+				</div>	
+				</div>	
+		</form>
+		
+		</div>
+</div>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+ 	 <script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.nstSlider.min.js"></script>
+	
+  <script src="js/imperio.js"></script>
+
+  <script>	
+ 
+	
+
+  </script>
+
 		
 </body>
 

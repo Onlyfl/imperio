@@ -38,7 +38,7 @@
 										  <li class="active"><a href="#">Главная</a></li>
 										   <li><a href="#">Недвижимость</a></li>
 										  <li><a href="#">Информация</a></li>
-										  <li><a href="#">Заявка</a></li>
+										  <li><span class="header_subscribe">Заявка</span></li>
 										  <li><a href="#">Контакты</a></li>
 										</ul>
 								</div>
@@ -67,6 +67,7 @@
 					</div>
 					</div>
 		</header>
+
 		<main class="main">
 			<div class="promo_map">
 				<div class="promo_map_header">
@@ -481,6 +482,7 @@
 				</div>
 			</div>
 		</main>
+
 		<footer class="footer">
 				<div class="container">
 					<div class="row">
@@ -594,15 +596,17 @@
 					</div>
 				</div>
 		</footer>
+		
 	</div>	
 
 		<div class="privacy">
 			<span class="privacy_text"><strong>Политика конфиденциальности</strong> и использования файлов Cookie</span>
 			<span class="privacy_close">&#215;</span>
 		</div>
-	<div class="wrapper_filter">
+
+	<div class="wrapper_filter" id="form1">
 		<div class="closfon"></div>
-		<div class="form_main">
+		<div class="form_main" >
 		<form action="" method="POST" role="form">
 			<legend>Заполните заявку</legend>
 			<div class="form_field_top">
@@ -620,9 +624,425 @@
 					<input type="text" class="" id="" >
 				</div>
 			</div>
+			<span class="form_message__note">Поля отмеченные <span>*</span> обязательны для заполнения</span>
 
-			<button type="submit" class="btn btn-primary">Submit</button>
+			<div class="additional_information">Сообщите нам больше информации о вас, и мы сэкономим ваше время и 
+				подготовим для вас все необходимые сведения.
+			</div>
+			<div class="additional_information_main_wrapp">
+				<div class="additional_information_main">
+					<div class="additional_information_block">
+						<div class="form-group">
+							<h6>Страна проживания (гражданство)</h6>
+							<input type="text" class="" id="" >
+						</div>
+						<div class="form-group">
+							<h6>Цель покупки</h6>
+							<ul class="form-group_checkbox">
+								<li>
+										<input type="checkbox" class="css-checkbox" id="checkboxH1"  value="">
+										<label for="checkboxH1" class="css-label">
+										</label>
+										<span>Для постоянного проживания</span>
+									</li>
+								<li>
+										<input type="checkbox" class="css-checkbox" id="checkboxH2"  value="">
+										<label for="checkboxH2" class="css-label">
+										</label>
+										<span>Для  получения ВНЖ</span>
+									</li>
+									<li>
+										<input type="checkbox" class="css-checkbox" id="checkboxH3"  value="">
+										<label for="checkboxH3" class="css-label">
+										</label>
+										<span>Для сдачи в аренду</span>
+									</li>
+									<li>
+										<input type="checkbox" class="css-checkbox" id="checkboxH4"  value="">
+										<label for="checkboxH4" class="css-label">
+										</label>
+										<span>Для инвестиций</span>
+									</li>
+									<li>
+										<input type="checkbox" class="css-checkbox" id="checkboxH5"  value="">
+										<label for="checkboxH5" class="css-label">
+										</label>
+										<span>Для отдыха</span>
+									</li>
+							</ul>
+						</div>
+					
+					</div>
+					<div class="additional_information_block">
+						<div class="form-group">
+							<h6>Предпочитаемый язык </h6>
+							<ul class="form-group_checkbox inline">
+								<li>
+										<input type="checkbox" class="css-checkbox" id="checkboxE1"  value="">
+										<label for="checkboxE1" class="css-label">
+										</label>
+										<span>Русский</span>
+									</li>
+								<li>
+										<input type="checkbox" class="css-checkbox" id="checkboxE2"  value="">
+										<label for="checkboxE2" class="css-label">
+										</label>
+										<span>Английский</span>
+									</li>
+									<li>
+										<input type="checkbox" class="css-checkbox" id="checkboxE3"  value="">
+										<label for="checkboxE3" class="css-label">
+										</label>
+										<span>Испанский</span>
+									</li>
+							</ul>
+						</div>
+						<div class="form-group">
+							<h6>Когда вы планируете приехать для просмотра объектов?</h6>
+							<div class="input_group">
+								<input type="text" class="" id="" placeholder="От" >
+								<input type="text" class="" id="" placeholder="До" >
+							</div>
+						</div>
+						<div class="form-group">
+							<h6>Нужно ли вас встретить в аэропорту? </h6>
+							<ul class="form-group_checkbox inline color">
+								<li>
+										<input  type="radio" class="css-checkbox" id="checkboxF1" name="1" value="">
+										<label for="checkboxF1" class="css-label">
+										</label>
+										<span>Да</span>
+									</li>
+								<li>
+										<input  type="radio" class="css-checkbox" id="checkboxF2" name="1"  value="">
+										<label for="checkboxF2" class="css-label">
+										</label>
+										<span>Нет</span>
+									</li>
+							</ul>
+						</div>
+						<div class="form-group">
+							<div class="input_group small">
+								<div class="input_wrapp"><input type="text" class=""  placeholder="Введите дату прилета" >
+									<span>calendar</span>
+								</div>
+								<input type="text"   placeholder="Номер рейса" >
+								<input type="text" class="full"  placeholder="Название аэропорта" >
+								
+							</div>
+							
+						</div>
+					</div>
+						<div class="close_inf">Свернуть</div>
+					</div>
+
+					<button type="button" class="">Отправить заявку</button>
+				</div>	
 		</form>
+		<div class="form_main_selected">
+			<div class="form_main_selected_header">
+				<h4>Выбранные объекты</h4>
+			</div>
+				<div class="form_main_selected_block">
+					<div class="catalog_products_item form_selected_item">
+										<h5> Аликанте, вилла на берегу моря</h5>
+
+										<div class="catalog_products_item_control">
+											<span class="item_close_hidden">&#215;</span>
+										</div>
+
+										<div class="form_selected_item_cover">
+											<span class="item_close_reverse">Вернуть объект в заявку</span>
+										</div>
+
+										<div class="catalog_products_item_block">
+											<div class="img_wrapp">
+												<img src="images/prod1.jpg" alt="">
+											</div>
+											<div class="text_wrapp">
+													<div class="price_block">
+															<span>Цена:</span>
+																<span class="price"><span class="symbol">$</span>146,203</span>
+																<span class="bookmark">*</span>
+														</div>
+														<a class="location" href="">
+																<span class="icon"><i class="icon-WAqf3x8n3I"></i></span>
+															<span class="desk black">Guardamar del Segura, <br> Alicante - Costa Blanca South </span>
+														</a>
+														<div class="type">
+															<span>Тип недвижимости: <strong>Элитное</strong></span>
+														</div>
+														<ul class="features">
+															<li>
+																<span class="icon"><i class="icon-ArBukpLo"></i></span>
+																<span class="black">1,614.60 sq ft </span>
+															</li>
+															<li>
+																<span class="icon"><i class="icon-r8COw2Ahsn"></i></span>
+																<span class="black">23 комнаты</span>
+															</li>
+															<li>
+																<span class="icon"><i class="icon-vyKaH0adjA"></i></span>
+																<span class="black">4 душа</span>
+															</li>
+														</ul>
+													</div>
+										</div>
+										<div class="link">
+											<a href="">
+												Подробнее	
+											</a>
+										</div>
+						</div>
+
+					<div class="catalog_products_item form_selected_item">
+										<h5> Аликанте, вилла на берегу моря</h5>
+										<div class="catalog_products_item_control">
+											<span class="item_close_hidden">&#215;</span>
+										</div>
+										<div class="form_selected_item_cover">
+											<span class="item_close_reverse">Вернуть объект в заявку</span>
+										</div>
+										<div class="catalog_products_item_block">
+											<div class="img_wrapp">
+												<img src="images/prod1.jpg" alt="">
+											</div>
+											<div class="text_wrapp">
+													<div class="price_block">
+															<span>Цена:</span>
+																<span class="price"><span class="symbol">$</span>146,203</span>
+																<span class="bookmark">*</span>
+														</div>
+														<a class="location" href="">
+																<span class="icon"><i class="icon-WAqf3x8n3I"></i></span>
+															<span class="desk black">Guardamar del Segura, <br> Alicante - Costa Blanca South </span>
+														</a>
+														<div class="type">
+															<span>Тип недвижимости: <strong>Элитное</strong></span>
+														</div>
+														<ul class="features">
+															<li>
+																<span class="icon"><i class="icon-ArBukpLo"></i></span>
+																<span class="black">1,614.60 sq ft </span>
+															</li>
+															<li>
+																<span class="icon"><i class="icon-r8COw2Ahsn"></i></span>
+																<span class="black">23 комнаты</span>
+															</li>
+															<li>
+																<span class="icon"><i class="icon-vyKaH0adjA"></i></span>
+																<span class="black">4 душа</span>
+															</li>
+														</ul>
+													</div>
+										</div>
+										<div class="link">
+											<a href="">
+												Подробнее	
+											</a>
+										</div>
+						</div>
+
+						<div class="catalog_products_item form_selected_item">
+										<h5> Аликанте, вилла на берегу моря</h5>
+										<div class="catalog_products_item_control">
+											<span class="item_close_hidden">&#215;</span>
+										</div>
+										<div class="form_selected_item_cover">
+											<span class="item_close_reverse">Вернуть объект в заявку</span>
+										</div>
+										<div class="catalog_products_item_block">
+											<div class="img_wrapp">
+												<img src="images/prod1.jpg" alt="">
+											</div>
+											<div class="text_wrapp">
+													<div class="price_block">
+															<span>Цена:</span>
+																<span class="price"><span class="symbol">$</span>146,203</span>
+																<span class="bookmark">*</span>
+														</div>
+														<a class="location" href="">
+																<span class="icon"><i class="icon-WAqf3x8n3I"></i></span>
+															<span class="desk black">Guardamar del Segura, <br> Alicante - Costa Blanca South </span>
+														</a>
+														<div class="type">
+															<span>Тип недвижимости: <strong>Элитное</strong></span>
+														</div>
+														<ul class="features">
+															<li>
+																<span class="icon"><i class="icon-ArBukpLo"></i></span>
+																<span class="black">1,614.60 sq ft </span>
+															</li>
+															<li>
+																<span class="icon"><i class="icon-r8COw2Ahsn"></i></span>
+																<span class="black">23 комнаты</span>
+															</li>
+															<li>
+																<span class="icon"><i class="icon-vyKaH0adjA"></i></span>
+																<span class="black">4 душа</span>
+															</li>
+														</ul>
+													</div>
+										</div>
+										<div class="link">
+											<a href="">
+												Подробнее	
+											</a>
+										</div>
+						</div>
+
+						<div class="catalog_products_item form_selected_item">
+										<h5> Аликанте, вилла на берегу моря</h5>
+
+										<div class="catalog_products_item_control">
+											<span class="item_close_hidden">&#215;</span>
+										</div>
+
+										<div class="form_selected_item_cover">
+											<span class="item_close_reverse">Вернуть объект в заявку</span>
+										</div>
+
+										<div class="catalog_products_item_block">
+											<div class="img_wrapp">
+												<img src="images/prod1.jpg" alt="">
+											</div>
+											<div class="text_wrapp">
+													<div class="price_block">
+															<span>Цена:</span>
+																<span class="price"><span class="symbol">$</span>146,203</span>
+																<span class="bookmark">*</span>
+														</div>
+														<a class="location" href="">
+																<span class="icon"><i class="icon-WAqf3x8n3I"></i></span>
+															<span class="desk black">Guardamar del Segura, <br> Alicante - Costa Blanca South </span>
+														</a>
+														<div class="type">
+															<span>Тип недвижимости: <strong>Элитное</strong></span>
+														</div>
+														<ul class="features">
+															<li>
+																<span class="icon"><i class="icon-ArBukpLo"></i></span>
+																<span class="black">1,614.60 sq ft </span>
+															</li>
+															<li>
+																<span class="icon"><i class="icon-r8COw2Ahsn"></i></span>
+																<span class="black">23 комнаты</span>
+															</li>
+															<li>
+																<span class="icon"><i class="icon-vyKaH0adjA"></i></span>
+																<span class="black">4 душа</span>
+															</li>
+														</ul>
+													</div>
+										</div>
+										<div class="link">
+											<a href="">
+												Подробнее	
+											</a>
+										</div>
+						</div>
+
+					<div class="catalog_products_item form_selected_item">
+										<h5> Аликанте, вилла на берегу моря</h5>
+										<div class="catalog_products_item_control">
+											<span class="item_close_hidden">&#215;</span>
+										</div>
+										<div class="form_selected_item_cover">
+											<span class="item_close_reverse">Вернуть объект в заявку</span>
+										</div>
+										<div class="catalog_products_item_block">
+											<div class="img_wrapp">
+												<img src="images/prod1.jpg" alt="">
+											</div>
+											<div class="text_wrapp">
+													<div class="price_block">
+															<span>Цена:</span>
+																<span class="price"><span class="symbol">$</span>146,203</span>
+																<span class="bookmark">*</span>
+														</div>
+														<a class="location" href="">
+																<span class="icon"><i class="icon-WAqf3x8n3I"></i></span>
+															<span class="desk black">Guardamar del Segura, <br> Alicante - Costa Blanca South </span>
+														</a>
+														<div class="type">
+															<span>Тип недвижимости: <strong>Элитное</strong></span>
+														</div>
+														<ul class="features">
+															<li>
+																<span class="icon"><i class="icon-ArBukpLo"></i></span>
+																<span class="black">1,614.60 sq ft </span>
+															</li>
+															<li>
+																<span class="icon"><i class="icon-r8COw2Ahsn"></i></span>
+																<span class="black">23 комнаты</span>
+															</li>
+															<li>
+																<span class="icon"><i class="icon-vyKaH0adjA"></i></span>
+																<span class="black">4 душа</span>
+															</li>
+														</ul>
+													</div>
+										</div>
+										<div class="link">
+											<a href="">
+												Подробнее	
+											</a>
+										</div>
+						</div>
+
+						<div class="catalog_products_item form_selected_item">
+										<h5> Аликанте, вилла на берегу моря</h5>
+										<div class="catalog_products_item_control">
+											<span class="item_close_hidden">&#215;</span>
+										</div>
+										<div class="form_selected_item_cover">
+											<span class="item_close_reverse">Вернуть объект в заявку</span>
+										</div>
+										<div class="catalog_products_item_block">
+											<div class="img_wrapp">
+												<img src="images/prod1.jpg" alt="">
+											</div>
+											<div class="text_wrapp">
+													<div class="price_block">
+															<span>Цена:</span>
+																<span class="price"><span class="symbol">$</span>146,203</span>
+																<span class="bookmark">*</span>
+														</div>
+														<a class="location" href="">
+																<span class="icon"><i class="icon-WAqf3x8n3I"></i></span>
+															<span class="desk black">Guardamar del Segura, <br> Alicante - Costa Blanca South </span>
+														</a>
+														<div class="type">
+															<span>Тип недвижимости: <strong>Элитное</strong></span>
+														</div>
+														<ul class="features">
+															<li>
+																<span class="icon"><i class="icon-ArBukpLo"></i></span>
+																<span class="black">1,614.60 sq ft </span>
+															</li>
+															<li>
+																<span class="icon"><i class="icon-r8COw2Ahsn"></i></span>
+																<span class="black">23 комнаты</span>
+															</li>
+															<li>
+																<span class="icon"><i class="icon-vyKaH0adjA"></i></span>
+																<span class="black">4 душа</span>
+															</li>
+														</ul>
+													</div>
+										</div>
+										<div class="link">
+											<a href="">
+												Подробнее	
+											</a>
+										</div>
+						</div>
+
+					</div>
+					<a href="" class="form_main_selected_link">Посмотреть все объекты</a>
+					<button type="button" class="form_main_selected_button">Отправить заявку</button>
+			</div>
+		</div>
 		</div>
 </div>
 	 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>

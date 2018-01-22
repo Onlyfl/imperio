@@ -280,6 +280,72 @@ html[xmlns] .flexslider .slides {
   opacity: 1;
   cursor: default;
 }
+#slider_popup {
+  height: 411px;
+  margin-bottom: 20px;
+  border: none;
+
+}
+#slider_popup .flex-viewport {
+  height: inherit;
+}
+#carousel_popup {
+  height: 72px;
+  width: 628px;
+  padding-left: 30px;
+  position: relative;
+  padding-right: 118px;
+}
+#carousel_popup .flex-viewport {
+  height: inherit;
+}
+.flexslider_popup.flexslider .flex-direction-nav a{
+    display: block;
+    width: 37px;
+    height: 97px;
+   
+   background:  url(../images/arr_6.png) 0 0 no-repeat;
+   
+}
+.flexslider_popup.flexslider .flex-direction-nav a:before{
+  display: none;
+}
+.flexslider_popup.flexslider .flex-direction-nav .flex-prev {
+   background:  url(../images/arr_5.png) 0 0 no-repeat;
+}
+
+.flexslider_popup.flexslider:hover .flex-direction-nav .flex-prev {
+  left: 25px;
+}
+
+.flexslider_popup.flexslider:hover .flex-direction-nav .flex-next {
+  right: 25px;
+}
+
+
+
+.carousel_popup.flexslider .flex-direction-nav a{
+    display: block;
+    width: 12px;
+    height: 31px;
+   top: 16px;
+   background:  url(../images/arr_7.png) 0 0 no-repeat;
+   
+}
+.carousel_popup.flexslider .flex-direction-nav a:before{
+  display: none;
+}
+.carousel_popup.flexslider .flex-direction-nav .flex-prev {
+   background:  url(../images/arr_8.png) 0 0 no-repeat;
+}
+
+.carousel_popup.flexslider:hover .flex-direction-nav .flex-prev {
+  left: 0;
+}
+
+.carousel_popup.flexslider:hover .flex-direction-nav .flex-next {
+  right: 0;
+}
 /* ====================================================================================================================
  * RESPONSIVE
  * ====================================================================================================================*/

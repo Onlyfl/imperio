@@ -291,6 +291,7 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 }
 label.css-label {
 	background-image:url(../images/mark.png);
+	background-repeat: no-repeat;
 }
 
 .catalog_search_control_list_block {
@@ -536,7 +537,7 @@ label.css-label {
   }
 }
 .wrapper_filter {
-    position: fixed;
+    position: absolute;
     height: 100%;
     width: 100%;
     left: 0px;
@@ -544,16 +545,40 @@ label.css-label {
     z-index: 10;
     display: none;
 }
-
+.closfon {
+	 background-color: rgba(0, 0, 0, 0.7);
+	position:fixed;
+	height:100%;
+	width:100%;
+	left:0px;
+	top:0px;
+	z-index:11;
+	cursor: pointer;
+	display:block;
+}
+.closfon2 {
+	 background-color: rgba(0, 0, 0, 0.7);
+	position:fixed;
+	height:100%;
+	width:100%;
+	left:0px;
+	top:0px;
+	z-index:11;
+	cursor: pointer;
+	display:none;
+}
 .form_main {
 	display: block;
 	width: 720px;
 	position: relative;
 	background-color: #fff;
 	margin: 0 auto;
-	padding: 35px 45px; 
-	z-index: 11;
+	z-index: 12;
 	text-align: center;
+	top: 0;
+	> form {
+		padding: 35px 45px;
+	}
 	legend {
 		font-size: 18px;
 		font-weight: bold;
@@ -564,9 +589,16 @@ label.css-label {
 		margin-bottom: 30px;
 	}
 }
+.form_main.form_main_short  {
+	width: 400px;
+	position: relative;
+	top: 2300px;
+}
+
 .form_field_top {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	position: relative;
 	.error {
@@ -587,6 +619,7 @@ label.css-label {
 	.form-group	{
 		width: 195px;
 		text-align: left;
+		margin-bottom: 10px;
 		label {
 			font-size: 12px;
 			font-weight: normal;
@@ -606,12 +639,409 @@ label.css-label {
 		}
 	}
 }
+.form_main_short {
+	
+	form {
+		padding: 0;
+	}
+	.form_main_short_form_wrapp {
+		padding: 35px 50px 40px;
+		background-color: #ededed;
+		position: relative;
+
+		.close_inf {
+		color: #3399cc;
+		display: inline-block;
+		position: absolute;
+		bottom: 10px;
+		left: 50px;
+		cursor: pointer;
+		font-size: 12px;
+		}
+	}
+	.form_main_short_form_wrapp2 {
+		padding: 0 50px 0;
+		background-color: #fff;
+		display: none;
+	}
+	.form_field_top {
+		.form-group {
+			width: 300px;
+			margin-bottom: 5px;
+			input {
+				background-color: #fff;
+				font-size: 11px;
+			}
+		}
+	}
+	.additional_information {
+		font-size: 11px;
+	}
+	.additional_information_main_wrapp {
+		display: block;
+		button {
+			margin-bottom: 40px;
+			padding-left: 47px;
+			padding-right: 47px;
+		}
+	}
+	.additional_information_block {
+		.form-group {
+			input {
+				background-color: #fff;
+				font-size: 11px;
+			}
+			h5 {
+				font-size: 12px;
+		    font-weight: bold;
+		    margin-top: 0;
+		    margin-bottom: 5px;
+			}
+			h6 {
+				margin-left: 45px;
+				margin-bottom: 7px;
+			}
+
+		}
+		
+		.form-group_dd {
+			font-size: 12px;
+			color: #3399cc;
+			cursor: pointer;
+			line-height: 1em;
+			margin-bottom: 5px;
+			span {
+					border-bottom: 1px dashed #3399cc;
+					display: inline-block;
+			}
+		}
+		.form-group_dd.opened {
+			font-weight: bold;
+		}
+		.form-group_checkbox {
+			padding-left: 45px;
+			margin-bottom: 10px;
+		}
+		.form-group_checkbox.inline {
+			margin-bottom: 10px;
+			padding-left: 0;
+		}
+	}
+	.form-group_hidden {
+		display: none;
+		.input_group {
+			margin-bottom: 20px;
+			textarea{
+				height: 100px;
+				width: 100%;
+				padding: 5px;
+				font-size: 11px;
+			}
+		}
+	}
+	.form-group_hidden.opened {
+		display: block;
+	}
+}
+
 .success_input {
 	background:  url(../images/success.png) right center no-repeat;
 }
 .form_message__note {
-	display: inline-block;
+	display: block;
 	font-size: 10px;
 	font-style: italic;
 	color: #000000;
+	text-align: left;
+	margin-bottom: 25px;
+	> span {
+		color: #be0014;
+	}
+}
+.additional_information {
+	color: #3399cc;
+	text-align: left;
+	line-height: 1.3em;
+	border-bottom: 1px dashed #999999;
+	padding-bottom: 7px;
+	cursor: pointer;
+}
+.additional_information.opened {
+	color: #999999;
+}
+.additional_information_main_wrapp {
+	display: none;
+	> button {
+		color: #fff;
+		font-size: 12px;
+		background-color: #000033;
+		text-transform: uppercase;
+		border: none;
+		padding: 10px 80px;
+	}
+}
+.additional_information_main {
+	padding-top: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: relative;
+	flex-wrap: wrap;
+	.close_inf {
+		color: #3399cc;
+		display: inline-block;
+		position: absolute;
+		bottom: 30px;
+		cursor: pointer;
+	}
+}
+.additional_information_block {
+	width: 300px;
+	text-align: left;
+	display: inline-block;
+	margin-bottom: 10px;
+	
+	
+	.form-group {
+	 > input {
+			width: 100%;
+			height: 28px;
+			padding: 0 5px;
+		}
+		h6 {
+			font-size: 12px;
+			font-weight: bold;
+			margin-top: 0;
+		}
+	}
+	.input_group {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+			flex-wrap: wrap;
+		input {
+			height: 28px;
+			width: 138px;
+			padding: 0 5px;
+			font-size: 11px;
+		}
+
+		.input_wrapp {
+			display: inline-block;
+			margin-bottom: 13px;
+			input {
+				width: 122px;
+			}
+			span {
+				width: 20px;
+				display: inline-block;
+				height: 20px;
+				text-indent: -9999px;
+				background:  url(../images/calendar.png) 0 0 no-repeat;
+				margin-left: 7px;
+			}
+		}
+		.full {
+		width: 100%;
+	}
+	}
+	.input_group.small {
+			input {
+				font-size: 10px;
+			}
+		}
+}
+.form-group_checkbox {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+li {
+	line-height: 1.3em;
+
+	span {
+		font-size: 12px;
+
+	}
+}
+	input[type=checkbox].css-checkbox + label.css-label {
+	min-height: 10px;
+	width: 9px;
+	margin-right: 5px;
+	}
+	input[type=checkbox].css-checkbox:checked + label.css-label {
+	background-position: 0 -10px;
+	}
+	label.css-label {
+	background-image:url(../images/mark4.png);
+
+	}
+	input[type=radio].css-checkbox {
+		display: none;
+	}
+	input[type=radio].css-checkbox + label.css-label {
+	min-height: 10px;
+	width: 9px;
+	margin-right: 5px;
+	margin-bottom: 0;
+	}
+	input[type=radio].css-checkbox:checked + label.css-label {
+	background-position: 0 -10px;
+	}
+	label.css-label {
+	background-image:url(../images/mark4.png);
+
+	}
+}
+.form-group_checkbox.inline {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	margin-bottom: 20px;
+	li {
+		display: inline-block;
+	}
+}
+.form-group_checkbox.color {
+	justify-content: flex-start;
+	li {
+		margin-right: 10px;
+		span {
+			text-decoration: underline;
+		}
+	}
+	input[type=radio].css-checkbox:checked + label.css-label + span {
+	color: #3399cc;
+	}
+}
+.form_main_selected {
+	padding: 20px 50px;
+	background-color: #ededed;
+}
+.form_main_selected_header {
+	h4 {
+		font-size: 18px;
+		font-weight: bold;
+		color: #000033;
+		text-transform: uppercase;
+		margin: 0;
+		margin-bottom: 45px;
+	}
+}
+.form_main_selected_link {
+	display: block;
+	background-color: #79b5d9;
+	color: #000000;
+	text-transform: uppercase;
+	font-size: 12px;
+	padding: 6px;
+	margin-bottom: 40px;
+}
+.form_main_selected_button {
+	color: #fff;
+		font-size: 12px;
+		background-color: #000033;
+		text-transform: uppercase;
+		border: none;
+		padding: 10px 80px;
+		margin-bottom: 15px;
+}
+.form_main_selected_block {
+	padding-bottom: 10px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	.form_selected_item {
+	width: 300px;
+	height: 417px;
+	border: 1px solid #818181;
+	margin-bottom: 20px;
+	position: relative;
+	z-index: 2;
+	h5 {
+		margin-top: 27px;
+		margin-bottom: 10px;
+		font-size: 12px;
+		text-align: left;
+		padding-left: 15px;
+	}
+	.item_close_hidden {
+		font-size: 22px;
+    height: 16px;
+    width: 16px;
+	}
+}
+.form_selected_item_cover {
+
+	position: absolute;
+	left: -1px;
+	top: -1px;
+	width: 100%+3px;
+	height: 100%+3px;
+	z-index: 3;
+	background-color: rgba(237, 237, 237, 0.8);
+	text-align: center;
+	display: none;
+
+	> span {
+		display: inline-block;
+		margin-top: 63%;
+		width: 265px;
+		margin-right: 5px;
+		font-size: 14px;
+		text-transform: uppercase;
+		cursor: pointer;
+		padding: 10px;
+		color: #fff;
+		background-color: rgba(0, 0, 51, 0.6)
+	}
+}
+.catalog_products_item_block {
+	display: block;
+	height: 337px;
+	padding: 0 15px;
+}
+
+.form_selected_item .img_wrapp {
+	width: 265px;
+  height: 177px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+.catalog_products_item_block .text_wrapp {
+	text-align: left;
+	font-size: 12px;
+	width: 265px;
+
+}
+.catalog_products_item_block .text_wrapp .price_block {
+	font-size: 14px;
+	margin-bottom: 9px;
+	font-weight: bold;
+}
+.catalog_products_item_block .text_wrapp .location {
+	margin-bottom: 9px;
+}
+.catalog_products_item_block .text_wrapp .location .icon {
+font-size: 30px;
+padding-top: 0;
+}
+ .catalog_products_item_block .text_wrapp .location .desk {
+ 	font-size: 12px;
+ }
+ .catalog_products_item_control { 
+	top: 4px;
+  right: 17px;
+ }
+ .catalog_products_item .link {
+ 	padding: 0;
+ 	padding-right: 15px;
+ }
+.catalog_products_item .favorites {
+	top: 42px;
+}
+.catalog_products_item .favorites > span {
+	font-size: 14px;
+}
 }
