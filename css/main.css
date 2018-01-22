@@ -4060,6 +4060,12 @@ span.catalog_prices_tabs_bookmark:hover > span {
     font-size: 10px;
     height: 217px;
   }
+  .popup_catalog {
+    display: none !important;
+  }
+  .closfon2 {
+    display: none !important;
+  }
 }
 @media (max-width: 988px) {
   .header {
@@ -4909,6 +4915,9 @@ span.catalog_prices_tabs_bookmark:hover > span {
   }
   .popup_favorites .popup_favorites_button {
     font-size: 10px;
+  }
+  .main_product_info_desc .features li .icon {
+    font-size: 24px;
   }
 }
 @media (max-width: 550px) {
