@@ -6,6 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!--calendar -->
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+	
 	<link rel="stylesheet" href="css/main.css">
 
 	<!--[if lt IE 9]>
@@ -638,7 +641,7 @@
 						</div>
 						<div class="form-group">
 							<h6>Цель покупки</h6>
-							<ul class="form-group_checkbox">
+							<ul class="form-group_checkbox hiddens">
 								<li>
 										<input type="checkbox" class="css-checkbox" id="checkboxH1"  value="">
 										<label for="checkboxH1" class="css-label">
@@ -699,7 +702,7 @@
 						</div>
 						<div class="form-group">
 							<h6>Когда вы планируете приехать для просмотра объектов?</h6>
-							<div class="input_group">
+							<div class="input_group calendar_block">
 								<input type="text" class="" id="" placeholder="От" >
 								<input type="text" class="" id="" placeholder="До" >
 							</div>
@@ -708,22 +711,24 @@
 							<h6>Нужно ли вас встретить в аэропорту? </h6>
 							<ul class="form-group_checkbox inline color">
 								<li>
-										<input  type="radio" class="css-checkbox" id="checkboxF1" name="1" value="">
+										<input  type="radio" class="css-checkbox checkboxF1" id="checkboxF1" name="1" value="">
 										<label for="checkboxF1" class="css-label">
 										</label>
 										<span>Да</span>
 									</li>
 								<li>
-										<input  type="radio" class="css-checkbox" id="checkboxF2" name="1"  value="">
+										<input  type="radio" class="css-checkbox checkboxF2" id="checkboxF2" name="1"  value="">
 										<label for="checkboxF2" class="css-label">
 										</label>
 										<span>Нет</span>
 									</li>
 							</ul>
 						</div>
-						<div class="form-group">
+						<div class="form-group checkboxF1_hide">
 							<div class="input_group small">
-								<div class="input_wrapp"><input type="text" class=""  placeholder="Введите дату прилета" >
+
+
+								<div class="input_wrapp calendar_block"><input type="text" class=""  placeholder="Введите дату прилета" >
 									<span>calendar</span>
 								</div>
 								<input type="text"   placeholder="Номер рейса" >
@@ -1045,10 +1050,16 @@
 		</div>
 		</div>
 </div>
-	 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-   <script src="js/bootstrap.min.js"></script>
-    <script src="js/imperio.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+<!--calendar -->
+    <script src="js/bootstrap-datepicker.min.js"></script>
+   <script src="js/bootstrap-datepicker.ru.min.js"></script>
 		
+
+
+    <script src="js/imperio.js"></script>
+
 </body>
 
 </html>

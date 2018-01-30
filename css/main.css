@@ -609,7 +609,10 @@ a:hover {
 }
 .form_group_select {
   display: inline-block;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+}
+.form_group_select .form_group_select_block {
+  margin-bottom: 30px;
 }
 .form_group_select > div {
   display: inline-block;
@@ -622,8 +625,11 @@ a:hover {
 .form_group_input {
   vertical-align: top;
   display: inline-block;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   display: block;
+}
+.form_group_input .form_group_select_block {
+  margin-bottom: 30px;
 }
 .form_group_input > div {
   display: inline-block;
@@ -939,7 +945,7 @@ span.catalog_prices_tabs_bookmark {
   color: #00a0c6;
   margin-right: 0;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 span.catalog_prices_tabs_bookmark .tooltip_tabs {
   display: none;
@@ -947,7 +953,7 @@ span.catalog_prices_tabs_bookmark .tooltip_tabs {
   color: #000;
   background-color: #e6e6e6;
   position: absolute;
-  z-index: 2;
+  z-index: 4;
   line-height: 1.2em;
   right: -110px;
   top: -60px;
@@ -1033,6 +1039,7 @@ span.catalog_prices_tabs_bookmark:hover > span {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 10px 10px 10px 15px;
+  z-index: 4;
 }
 .sel.active .sel__box {
   display: block;
@@ -1070,6 +1077,9 @@ span.catalog_prices_tabs_bookmark:hover > span {
 /* ----- Select Box Black Panther ----- */
 .sel--black-panther {
   z-index: 3;
+}
+.sel--black-panther.active {
+  z-index: 4;
 }
 /* ----- Select Box Superman ----- */
 /* ===== Keyframes ===== */
@@ -1467,6 +1477,9 @@ span.catalog_prices_tabs_bookmark:hover > span {
 }
 .form-group_checkbox label.css-label {
   background-image: url(../images/mark4.png);
+}
+.form-group_checkbox.hiddens {
+  margin-bottom: 50px;
 }
 .form-group_checkbox.inline {
   display: -webkit-box;
@@ -2653,6 +2666,7 @@ span.catalog_prices_tabs_bookmark:hover > span {
   margin-bottom: 15px;
   line-height: 1em;
   position: relative;
+  padding: 0;
 }
 .main_product_info_desc .price_block > span {
   display: inline-block;
@@ -2671,6 +2685,7 @@ span.catalog_prices_tabs_bookmark:hover > span {
   font-size: 0px;
   display: inline-block;
   width: 100%;
+  padding: 0;
 }
 .main_product_info_desc .location .icon {
   padding-top: 5px;
@@ -2686,6 +2701,19 @@ span.catalog_prices_tabs_bookmark:hover > span {
 }
 .main_product_info_desc .type {
   margin-bottom: 16px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 .main_product_info_desc .type span {
   display: inline-block;
@@ -2714,16 +2742,27 @@ span.catalog_prices_tabs_bookmark:hover > span {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 .main_product_info_desc .features li {
   display: inline-block;
-  margin-right: 15px;
   line-height: 1em;
   position: relative;
   padding-left: 45px;
   padding-top: 5px;
   margin-bottom: 5px;
-  margin-right: 60px;
+  margin-right: 0;
 }
 .main_product_info_desc .features li .icon {
   font-size: 30px;
@@ -2909,7 +2948,7 @@ span.catalog_prices_tabs_bookmark:hover > span {
   position: absolute;
   z-index: 2;
   top: 4px;
-  left: 3px;
+  left: 4px;
 }
 .info_slider_main_img {
   width: 100%;
@@ -3645,11 +3684,14 @@ span.catalog_prices_tabs_bookmark:hover > span {
 }
 .popup_catalog {
   visibility: hidden;
-  width: 100%;
-  position: absolute;
+  width: 1170px;
   z-index: -2;
-  left: 0;
-  top: 0;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   padding: 15px 20px 40px;
   background-color: #fff;
   border: 1px solid #cdcdcd;
@@ -3841,6 +3883,18 @@ span.catalog_prices_tabs_bookmark:hover > span {
   font-size: 22px;
   height: 16px;
   width: 16px;
+}
+.popup_catalog .price_block .icon-heart-o {
+  font-size: 20px;
+}
+.checkboxJ1_hide {
+  display: none;
+}
+.checkboxI1_hide {
+  display: none;
+}
+.checkboxF1_hide {
+  display: none;
 }
 @media (max-width: 1200px) {
   .header_contacts {
@@ -4318,6 +4372,12 @@ span.catalog_prices_tabs_bookmark:hover > span {
   .breadcrumb a {
     font-size: 14px;
   }
+  .main_product_info_desc .features {
+    width: 60%;
+  }
+  .main_product_info_desc .type {
+    width: 60%;
+  }
   .main_product_info_desc .features li .icon {
     font-size: 28px;
   }
@@ -4735,15 +4795,13 @@ span.catalog_prices_tabs_bookmark:hover > span {
     font-size: 23px;
   }
   .main_product_info_desc .features {
-    padding-right: 15px;
-    padding-left: 15px;
+    width: 80%;
+  }
+  .main_product_info_desc .type {
+    width: 80%;
   }
   .main_product_info_desc .features li {
     font-size: 12px;
-    margin-right: 15px;
-  }
-  .main_product_info_desc .features li:nth-child(2n) {
-    margin-right: 20%;
   }
   .description_info_list > ul {
     font-size: 10px;
@@ -4918,6 +4976,9 @@ span.catalog_prices_tabs_bookmark:hover > span {
   }
   .main_product_info_desc .features li .icon {
     font-size: 24px;
+  }
+  .main_product_info_desc .features li {
+    padding-left: 32px;
   }
 }
 @media (max-width: 550px) {
@@ -5110,9 +5171,6 @@ span.catalog_prices_tabs_bookmark:hover > span {
   }
   .main_product_info_desc .features li {
     padding-left: 30px;
-  }
-  .main_product_info_desc .features li:nth-child(2n) {
-    margin-right: 10px;
   }
   .main_product_control_button_block {
     display: -webkit-box;

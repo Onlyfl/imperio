@@ -19,6 +19,14 @@ $(document).on("ready", function() {
 	});
 	});
 	
+	$(window).on("load", function() {
+	$('.calendar_block input').datepicker({
+    language: "ru",
+    orientation: "bottom auto"
+});
+	
+	});
+	
  
 	
 	
@@ -196,6 +204,23 @@ $(document).on('click','.active_favorites', function() {
 			
     });
 	
+	$(document).on('click','.checkboxJ1', function() {
+		 $('.checkboxJ1_hide').toggleClass('show');
+
+    });
+	
+	$(document).on('click','.checkboxI1', function() {
+		 $('.checkboxI1_hide').toggleClass('show');
+
+    });
+	$(document).on('click','.checkboxF1', function() {
+		 $('.checkboxF1_hide').addClass('show');
+
+    });
+	$(document).on('click','.checkboxF2', function() {
+		 $('.checkboxF1_hide').removeClass('show');
+
+    });
 	
 	
 	

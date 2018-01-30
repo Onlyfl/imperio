@@ -92,7 +92,10 @@
 }
 .form_group_select {
 	display: inline-block;
-	margin-bottom: 25px;
+	margin-bottom: 15px;
+	.form_group_select_block {
+		margin-bottom: 30px;
+	}
 > div {
 	display: inline-block;
 	margin-bottom: 15px;
@@ -132,6 +135,7 @@ h6 {
 .form_group_select_block {
 	width: 265px;
 	position: relative;
+
 	border: 1px solid #8e8e8e;
 	&:after {
   content: '\25BC';
@@ -372,14 +376,14 @@ label.css-label {
 			color: #00a0c6;
 			margin-right: 0;
 			position: relative;
-			z-index: 2;
+			z-index: 3;
 				.tooltip_tabs {
 					display: none;
 					margin-right: 0;
 					color: #000;
 					background-color: #e6e6e6;
 			position: absolute;
-			z-index: 2;
+			z-index: 4;
 			line-height: 1.2em;
 			right: -110px;
 			top: -60px;
@@ -469,7 +473,8 @@ label.css-label {
   background-color: #FFF;
   width: 265px;
   box-sizing: border-box;
-  padding: 10px 10px 10px 15px; 
+  padding: 10px 10px 10px 15px;
+  z-index: 4;
 }
 
 .sel.active .sel__box {
@@ -510,6 +515,9 @@ label.css-label {
 
 .sel--black-panther {
   z-index: 3;
+}
+.sel--black-panther.active {
+  z-index: 4;
 }
 
 /* ----- Select Box Superman ----- */
@@ -891,6 +899,9 @@ li {
 	background-image:url(../images/mark4.png);
 
 	}
+}
+.form-group_checkbox.hiddens {
+	margin-bottom: 50px;
 }
 .form-group_checkbox.inline {
 	display: flex;
