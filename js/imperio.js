@@ -1,4 +1,4 @@
-
+//--slider--//
 $(document).on("ready", function() {
 	 $('.flexslider').flexslider({
     animation: "slide",
@@ -6,8 +6,10 @@ $(document).on("ready", function() {
   });
 	});	 
 	
-	$(window).on("load", function() {
 	
+	//-----range slider//
+	$(window).on("load", function() {
+
 	$('.nstSlider').nstSlider({
     "left_grip_selector": ".leftGrip",
     "right_grip_selector": ".rightGrip",
@@ -19,13 +21,6 @@ $(document).on("ready", function() {
 	});
 	});
 	
-	$(window).on("load", function() {
-	$('.calendar_block input').datepicker({
-    language: "ru",
-    orientation: "bottom auto"
-});
-	
-	});
 	
  
 	
