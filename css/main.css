@@ -1653,6 +1653,10 @@ span.catalog_prices_tabs_bookmark:hover > span {
   width: 550px;
   display: inline-block;
 }
+.main_map iframe {
+  width: 100%;
+  height: 100%;
+}
 .main_map svg {
   width: 100%;
   height: 100%;
