@@ -283,7 +283,7 @@
      id="text253"
      x="370.76138"
      y="90.12661"
-     style="font-size:9px;font-family:Verdana-Bold;fill:#4fa0ca">Памплона</text>
+     style="font-size:14px;font-family:Verdana-Bold;fill:#4fa0ca">Памплона</text>
 <circle
      cx="404.7612"
      cy="77.777618"
@@ -354,7 +354,7 @@
      id="text211"
      x="324.76138"
      y="64.810814"
-     style="font-size:9px;font-family:Verdana-Bold;fill:#4fa0ca">Бильбао</text>
+     style="font-size:14px;font-family:Verdana-Bold;fill:#4fa0ca">Бильбао</text>
  
 	 </g>
 
@@ -377,7 +377,7 @@
      id="text251"
      x="255.2818"
      y="49.619213"
-     style="font-size:9px;font-family:Verdana-Bold;fill:#4fa0ca">Сантандер</text>
+     style="font-size:14px;font-family:Verdana-Bold;fill:#4fa0ca">Сантандер</text>
 
  
 	 </g>
@@ -914,10 +914,10 @@
 
 		       $('.zoom_map').addClass($(this).attr('data-link'));
 
-		       var ps = $(this).offset();
+		       var ps = $(this).position();
 		       var psp = $('.main_map').offset();
-		     $('.description_map').css("top", ps.top-psp.top);
-		      $('.description_map').css("left", ps.left-55);
+		     $('.description_map').css("top", ps.top-250);
+		      $('.description_map').css("left", ps.left-psp.left+50);
 		   
 
     });
