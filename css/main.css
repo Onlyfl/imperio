@@ -1644,6 +1644,83 @@ span.catalog_prices_tabs_bookmark:hover > span {
 .form_main_selected_block .catalog_products_item .favorites > span {
   font-size: 14px;
 }
+.map_block {
+  text-align: center;
+  position: relative;
+}
+.main_map {
+  height: 440px;
+  width: 550px;
+  display: inline-block;
+}
+.main_map svg {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+}
+.popup_map {
+  height: 440px;
+  width: 550px;
+  display: inline-block;
+  display: none;
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  top: 0;
+}
+.popup_map svg {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+}
+.popup_map svg g {
+  width: 100%;
+  height: 100%;
+}
+.description_map {
+  position: absolute;
+  z-index: 2;
+  display: none;
+  top: 0;
+  font-size: 10px;
+  background-color: rgba(24, 36, 113, 0.5);
+  text-align: left;
+  color: #edf7fc;
+  padding: 10px 10px 5px 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.description_map h5 {
+  font-size: 10px;
+  font-weight: bold;
+  margin: 0 0 5px;
+}
+.description_map > a {
+  display: block;
+  color: #edf7fc;
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+.description_map > a:hover {
+  text-decoration: none;
+}
+.description_map > span {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.description_map .description_map_count_objects strong {
+  display: inline-block;
+  font-weight: normal;
+}
+.description_map .zoom_map {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.description_map .zoom_map:hover {
+  text-decoration: none;
+}
 .header_navbar {
   margin: 0;
   padding-left: 0;
